@@ -1,5 +1,4 @@
 import Ember from 'ember';
-import Captcha from '../vendor/catpcha';
 
 export default Ember.ArrayController.extend({
   actions: {
