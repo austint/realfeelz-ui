@@ -1,3 +1,53 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<div class="home">
+  <div class="feeling">
+    <h1 class="title">RealFeelz</h1>
+      <div class="small-12 medium-12 large-12 small-centered columns">
+        <h2 class="real">What's Real For You Right Now?</h2>
+      </div>
+    <span class="bs">Anonymous. No BS. Just be you.</span>
+  </div>
+</div>
 
-{{outlet}}
+<div id="bottom-bar" class="row">
+  <nav class="breadcrumbs" role="menubar" aria-label="breadcrumbs">
+      <li role="menuitem"><a href="#">Home</a></li>
+      <li role="menuitem"><a href="#">About</a></li>
+  </nav>
+</div>
+
+
+<div class="row">
+  <div class="small-12 medium-12 large-12 small-centered columns">
+    <h3>Share, read, and discover our common experience.</h3>
+  </div>
+</div>
+<div class="form-container">
+  <div class="row">
+    <div class="small-12 medium-12 large-12 large-centered columns">
+      <form {{action "postStatement" newPost on="submit"}}>
+        {{textarea class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
+        <div id="recaptcha"></div>
+        <div class="status-text">
+          {{#if verifyingCaptcha}}
+          <p>Verifying Captcha...</p>
+          {{/if}}
+          {{#if showingCaptcha}}
+          <p>Getting a Captcha...</p>
+          {{/if}}
+          {{#if captchaVerified }}
+          <p>Now that we know you are a human, hit post again to share.</p>
+        </div>
+          {{/if}}
+          {{#if tryAgain}}
+          <p>Try again...</p>
+          {{/if}}
+        <div class="row">
+          <div class="small-12 medium-12 large-12 large-centered columns">
+            <button class="post" type="submit">Post</button>
+          </div>
+        </div>
+      </form>
+      {{outlet}}
+    </div>
+  </div>
+</div>
