@@ -15,7 +15,7 @@ export default Ember.ArrayController.extend({
           // Calls the verify function
           self.set('tryAgain', false);
           self.set('verifyingCaptcha', true);
-          Captcha.verify().then(function(result) {
+          CaptchaUtil.verify().then(function(result) {
             self.set('verifyingCaptcha', false);
             var verified = result.verified;
 
@@ -23,13 +23,13 @@ export default Ember.ArrayController.extend({
               // Submits the statement after captcha verification returns true.
               self.set('tryAgain', false);
               self.set('captchaVerified', true);
-              Captcha.destroy();
+              CaptchaUtil.destroy();
               self.set('captchaVisible', false);
               self.send('postStatement', newPost);
             } else {
               // Makes a call to display a new captcha if verification returns false.
               self.set('showingCaptcha', true);
-              Captcha.show().then(function() {
+              CaptchaUtil.show().then(function() {
                 tryAgain = true;
                 self.set('showingCaptcha', false);
                 self.set('tryAgain', tryAgain);
@@ -43,7 +43,7 @@ export default Ember.ArrayController.extend({
       }
       else {
         // Calls the show function to display the Captcha.
-        Captcha.show().then(function() {
+        CaptchaUtil.show().then(function() {
           self.set('captchaVisible', true);
         });
         bubbleState = false;
