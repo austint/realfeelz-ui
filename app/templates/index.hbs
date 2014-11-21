@@ -1,1 +1,11 @@
-<h1>This is the index template</h1>
+<div class="statement-container">
+  <div class="panel radius">
+    <ul id="statements">
+    {{#each}}
+      <li>
+        <p class="truths">{{body}}</p>
+      </li>
+    {{/each}}
+    </ul>
+  </div>
+</div>
