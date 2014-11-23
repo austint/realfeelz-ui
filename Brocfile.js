@@ -18,5 +18,6 @@ var app = new EmberApp();
 // along with the exports of each module as its value.
 
 app.import('vendor/captcha/captcha.js');
+app.import('bower_components/recaptcha-ajax/recaptcha_ajax.js');
 
 module.exports = app.toTree();
