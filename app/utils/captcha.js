@@ -36,3 +36,5 @@ CaptchaUtil.verify = function() {
 CaptchaUtil.destroy = function() {
   Recaptcha.destroy();
 };
+
+export default CaptchaUtil;
