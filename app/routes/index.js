@@ -12,7 +12,7 @@ var IndexRoute = Ember.Route.extend({
       });
       post.save();
     }
-  }  
+  }
 });
 
 export default IndexRoute;
