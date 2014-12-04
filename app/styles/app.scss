@@ -20,7 +20,11 @@ $button-bg-color: #4D7EA8;
 }
 
 .ember-view {
-  height: 100%;
+  height: max;
+}
+
+body {
+  text-align: center;
 }
 
 .home {
@@ -29,7 +33,7 @@ $button-bg-color: #4D7EA8;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100%;
+  // height: 100%;
 }
 
 p {
