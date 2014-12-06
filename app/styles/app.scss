@@ -50,11 +50,13 @@ html, body {
     /* give this to all tags from html to .fullscreen */
     height:100%;
 }
+
 .fullscreen,
 .content-a {
     width:100%;
     min-height:100%;
 }
+
 .not-fullscreen,
 .not-fullscreen .content-a,
 .fullscreen.not-overflow,
@@ -67,6 +69,7 @@ html, body {
 .content-a {
   display:table;
 }
+
 .content-b {
   display:table-cell;
     position:relative;
@@ -83,9 +86,11 @@ html, body {
 //     color:#ffffff;
 //     text-align:center;
 // }
+//
 section {
   background:#9ed100;
 }
+
 .not-fullscreen {
     height:50%;
 }
