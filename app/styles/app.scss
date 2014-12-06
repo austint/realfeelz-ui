@@ -60,36 +60,27 @@ section {
     height:50%;
 }
 
-
 @font-face {
   font-family: Aleo-Bold;
   src: url("styles/fonts/Aleo-Bold.woff");
 }
 
-@font-face {
-  font-family: 'Conv_AARDC___';
-  src: url('fonts/AARDC___.eot');
-  src: local('☺'), url('fonts/AARDC___.woff') format('woff'), url('fonts/AARDC___.ttf') format('truetype'), url('fonts/AARDC___.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 .ember-view {
-  height: max;
+  height: 100%;
 }
 
 body {
   text-align: center;
 }
 
-.home {
-  background: url('/assets/images/rising_light.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  // height: 100%;
-}
+// .home {
+//   background: url('/assets/images/rising_light.jpg') no-repeat center center fixed;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+//   height: 100%;
+// }
 
 p {
   text-align: center;
@@ -102,7 +93,7 @@ p {
   // font-family: "Conv_AARDC___";
   // font-weight: 100;
   // font-style: italic;
-  font-size: 5em;
+  font-size: 3em;
   // font-family: "Abril Fatface", "Open Sans", sans-serif !important;
   // font-family: "Pacifico", "Open Sans", sans-serif !important;
   // font-family: "Playfair Display", "Open Sans", sans-serif !important;
@@ -113,7 +104,7 @@ p {
 .right-now {
   color: #ffffff;
   font-family: Lato, sans-serif;
-  margin: 0;
+  // margin: 0;
 }
 
 #recaptcha_area, #recaptcha_table {
