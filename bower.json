@@ -2,7 +2,7 @@
   "name": "realfeelz-ui",
   "dependencies": {
     "handlebars": "~1.3.0",
-    "jquery": "*",
+    "jquery": "^1.11.1",
     "ember": "1.7.0",
     "ember-data": "1.0.0-beta.10",
     "ember-resolver": "~0.1.7",
@@ -14,6 +14,6 @@
     "ember-qunit-notifications": "0.0.4",
     "qunit": "~1.15.0",
     "recaptcha-ajax": "*",
-    "foundation": "*"
+    "foundation": "~5.4.7"
   }
 }
