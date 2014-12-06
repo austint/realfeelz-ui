@@ -45,14 +45,14 @@ html, body {
 }
 
 /* visual styles */
-body{
-    margin:0;
-    font-family:sans-serif;
-    font-size:28px;
-    line-height:100px;
-  color:#ffffff;
-    text-align:center;
-}
+// body{
+//     margin:0;
+//     font-family:sans-serif;
+//     font-size:28px;
+//     line-height:100px;
+//     color:#ffffff;
+//     text-align:center;
+// }
 section {
   background:#9ed100;
 }
@@ -69,9 +69,9 @@ section {
   height: 100%;
 }
 
-body {
-  text-align: center;
-}
+// body {
+//   text-align: center;
+// }
 
 // .home {
 //   background: url('/assets/images/rising_light.jpg') no-repeat center center fixed;
@@ -82,9 +82,9 @@ body {
 //   height: 100%;
 // }
 
-p {
-  text-align: center;
-}
+// p {
+//   text-align: center;
+// }
 
 .real-feelz {
   color: #ffffff;
@@ -104,7 +104,7 @@ p {
 .right-now {
   color: #ffffff;
   font-family: Lato, sans-serif;
-  // margin: 0;
+  margin: 0;
 }
 
 #recaptcha_area, #recaptcha_table {
@@ -114,14 +114,15 @@ p {
 
 .truths {
   font-size: 1.3em;
-  // font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: bold;
 }
 
 #statements {
   list-style-type: none;
   text-align: center;
-  padding-left: 40px;
+  padding: 0px;
+  margin: 0px;
 }
 
 textarea {
