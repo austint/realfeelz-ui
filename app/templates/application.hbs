@@ -1,24 +1,28 @@
-<div class="fullscreen background" style="background-image:url('http://static.simpledesktops.com/uploads/desktops/2013/08/01/stratigraphy.png');" data-img-width="1600" data-img-height="1064">
+<img src="/assets/images/rising_light_crop.jpg" id="bg" alt="">
+  <div class="flexcenter" id="home">
   <div class="content-a">
-    <div class="content-b">
-      <div class="row">
-        <div class="small-12 medium-12 large-12 columns">
-          <h1 class="real-feelz">RealFeelz</h1>
-          <h2 class="right-now">What's Real For You Right Now?</h2>
-          <span class="no-bs">Anonymous. No BS. Just be you.</span>
-        </div>
+      <div class="content-b">
+{{!--     <div class="small-12 medium-12 large-12 columns">
+      <div id="title-container"> --}}
+      {{!-- <div id="title-container" style="background-image:url('/assets/images/rising_light_crop.jpg');"> --}}
+        {{!-- <div class="panel radius"> --}}
+        <h1 class="real-feelz">RealFeelz</h1>
+        <h2 class="right-now">What's Real For You Right Now?</h2>
+        {{!-- <span class="no-bs">Anonymous. No BS. Just be you.</span> --}}
+        {{!-- </div> --}}
       </div>
     </div>
   </div>
-</div>
+{{!--   </div>
+    </div>
+    http://static.simpledesktops.com/uploads/desktops/2014/10/15/tetons-at-night.png
+    http://static.simpledesktops.com/uploads/desktops/2014/10/22/Buzz.png--}}
 
-<nav class="breadcrumbs">
-  <a href="#">Home</a>
-  <a href="#">About</a>
-</nav>
 
-<div class="row">
-  <div class="small-12 medium-12 large-12 columns">
+<div id="page-wrap" class="row" style="background: none;">
+
+  <div id="truth-containter" class="small-12 medium-12 large-12 columns">
+
     <form {{action "postStatement" newPost on="submit"}}>
       {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
       <div id="recaptcha"></div>
@@ -41,10 +45,20 @@
       </div>
     </form>
     {{outlet}}
+
   </div>
 </div>
 
-<hr>
+</div>
+
+{{!-- <div class="row">
+  <div class="large-12 columns">
+    <nav class="breadcrumbs">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+    </nav>
+  </div>
+</div> --}}
 
 <footer class="row">
   <div class="large-12 columns">
@@ -55,3 +69,34 @@
     </div>
   </div>
 </footer>
+
+
+
+{{!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+  $(function() {
+
+    var theWindow        = $(window),
+        $bg              = $("#bg"),
+        aspectRatio      = $bg.width() / $bg.height();
+
+    function resizeBg() {
+
+      if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+          $bg
+            .removeClass()
+            .addClass('bgheight');
+      } else {
+          $bg
+            .removeClass()
+            .addClass('bgwidth');
+      }
+    }
+
+    theWindow.resize(function() {
+      resizeBg();
+    }).trigger("resize");
+
+  });
+</script>
+ --}}

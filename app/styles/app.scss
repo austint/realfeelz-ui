@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700|Pacifico|PT+Sans|Lato:400,700);
+
 $crumb-bg: #000000;
 $crumb-font-color: #ffffff;
 $crumb-font-color: #ffffff;
@@ -5,6 +7,134 @@ $button-bg-color: #4D7EA8;
 
 @import 'bower_components/foundation/scss/foundation';
 @import 'bower_components/foundation/scss/normalize';
+
+.ember-view {
+  height: 100%;
+}
+
+.real-feelz {
+  margin: 0px !important;
+  color: #ffffff !important;
+  font-family: "Pacifico", "Open Sans", sans-serif !important;
+  font-size: 3em !important;
+  padding-bottom: 0px !important;
+}
+
+.right-now {
+  color: #ffffff !important;
+  font-family: "Lato", "PT Sans", sans-serif !important;
+  margin: 0px !important;
+  padding-top: 20px !important;
+  padding-bottom: 0px !important;
+  font-size: 2em !important;
+}
+
+#home {
+  // text-align: center;
+  // background: url('/assets/images/rising_light_crop.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  // padding-left: 5px;
+  // padding-right: 5px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.bgwidth {
+  width: 100%;
+}
+
+.bgheight {
+  height: 100%;
+}
+
+#page-wrap {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: white;
+  -moz-box-shadow: 0 0 0px black;
+  -webkit-box-shadow: 0 0 0px black;
+  box-shadow: 0 0 0px black;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#title-containter {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#truth-containter {
+  padding: 0px;
+  margin: 0px;
+}
+
+footer {
+  text-align: center;
+}
+
+// @font-face {
+//   font-family: Aleo-Bold;
+//   src: url("styles/fonts/Aleo-Bold.woff");
+// }
+
+#recaptcha_area, #recaptcha_table {
+  margin: 0 auto !important;
+  margin-bottom: 1em !important;
+}
+
+.truths {
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+#statements {
+  list-style-type: none;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+textarea {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  position: middle !important;
+}
+
+.content-a {
+  display: table;
+}
+
+.content-b {
+  display: table-cell;
+    position: relative;
+  vertical-align: middle;
+  text-align: center;
+}
 
 .flexcontainer {
    display: -webkit-flex;
@@ -34,124 +164,4 @@ $button-bg-color: #4D7EA8;
    align-items: center;
    -webkit-justify-content: center;
    justify-content: center;
-}
-
-/* background setup */
-.background {
-    background-repeat:no-repeat;
-    /* custom background-position */
-    background-position:50% 50%;
-    /* ie8- graceful degradation */
-    background-position:50% 50%\9 !important;
-}
-
-/* fullscreen setup */
-html, body {
-    /* give this to all tags from html to .fullscreen */
-    height:100%;
-}
-
-.fullscreen,
-.content-a {
-    width:100%;
-    min-height:100%;
-}
-
-.not-fullscreen,
-.not-fullscreen .content-a,
-.fullscreen.not-overflow,
-.fullscreen.not-overflow .content-a {
-    height:100%;
-    overflow:hidden;
-}
-
-/* content centering styles */
-.content-a {
-  display:table;
-}
-
-.content-b {
-  display:table-cell;
-    position:relative;
-  vertical-align:middle;
-  text-align:center;
-}
-
-/* visual styles */
-// body{
-//     margin:0;
-//     font-family:sans-serif;
-//     font-size:28px;
-//     line-height:100px;
-//     color:#ffffff;
-//     text-align:center;
-// }
-//
-section {
-  background:#9ed100;
-}
-
-.not-fullscreen {
-    height:50%;
-}
-
-@font-face {
-  font-family: Aleo-Bold;
-  src: url("styles/fonts/Aleo-Bold.woff");
-}
-
-.ember-view {
-  height: 100%;
-}
-
-.real-feelz {
-  color: #ffffff;
-  font-family: "Aleo-Bold";
-  margin: 30px;
-  // font-family: "Conv_AARDC___";
-  // font-weight: 100;
-  // font-style: italic;
-  font-size: 3em;
-  // font-family: "Abril Fatface", "Open Sans", sans-serif !important;
-  // font-family: "Pacifico", "Open Sans", sans-serif !important;
-  // font-family: "Playfair Display", "Open Sans", sans-serif !important;
-  // font-family: "Cinzel", "Open Sans", sans-serif !important;
-  // font-family: "Lato", "Open Sans", sans-serif !important;
-}
-
-.right-now {
-  color: #ffffff;
-  font-family: Lato, sans-serif;
-  margin: 0;
-}
-
-#recaptcha_area, #recaptcha_table {
-  margin: 0 auto !important;
-  margin-bottom: 1em !important;
-}
-
-.truths {
-  font-size: 1.3em;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
-}
-
-#statements {
-  list-style-type: none;
-  text-align: center;
-  padding: 0px;
-  margin: 0px;
-}
-
-textarea {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-p {
-  text-align: center;
-}
-
-button {
-  position: middle !important;
 }
