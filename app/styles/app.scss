@@ -41,11 +41,6 @@ $button-bg-color: #4D7EA8;
   // padding-right: 5px;
 }
 
-img {
-  height: 100%;
-  width: 100%;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -55,6 +50,8 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .bgwidth {
@@ -123,6 +120,11 @@ textarea {
 
 button {
   position: middle !important;
+}
+
+p {
+  text-align: center;
+  color: #ffffff;
 }
 
 .content-a {
