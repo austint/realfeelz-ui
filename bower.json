@@ -16,5 +16,10 @@
     "chai": "~1.9.1",
     "ember-mocha-adapter": "0.2.1",
     "ember-mocha": "~0.1.1"
+  },
+  "resolutions": {
+    "chai": "~1.10.0",
+    "mocha": "~2.0.1",
+    "jquery": ">=1.2"
   }
 }
