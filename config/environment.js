@@ -23,7 +23,7 @@ module.exports = function(environment) {
       'default-src': "'none'",
       'script-src': "'self' 'unsafe-eval' http://www.google.com/recaptcha/",
       'font-src': "'self' http://fonts.gstatic.com", // Allow fonts to be loaded from http://fonts.gstatic.com
-      'connect-src': "'self'",
+      'connect-src': "'self' https://realfeelz-server.herokuapp.com/api/",
       'img-src': "'self' http://www.google.com/recaptcha/",
       'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com", // Allow inline styles and loaded CSS from http://fonts.googleapis.com 
       'media-src': "'self'"
