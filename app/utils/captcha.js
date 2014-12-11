@@ -1,5 +1,5 @@
 var CaptchaUtil = {
-  pubKey: '6Ld0jv0SAAAAAFU12E2rtRlu76Pe1uCRR0msmVsX',
+  pubKey: '6LeKIP8SAAAAAIHjJyjZwlN1SAV8mNm2fMUkFn7i',
   url: 'https://www.google.com/recaptcha/api/verify'
 };
 
