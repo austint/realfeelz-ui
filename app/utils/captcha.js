@@ -22,7 +22,7 @@ CaptchaUtil.verify = function() {
       response: Recaptcha.get_response()
     };
 
-    Ember.$.ajax('/api/captcha/verify', {
+    Ember.$.ajax('https://realfeelz-server.herokuapp.com/api/captcha/verify', {
       type: 'POST',
       contentType: 'application/json; charset=utf-8',
       data: JSON.stringify(data)
