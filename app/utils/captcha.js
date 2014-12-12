@@ -28,6 +28,7 @@ CaptchaUtil.verify = function() {
       data: JSON.stringify(data)
     })
     .then(function(response) {
+      console.log(response.result);
       resolve(response.result);
     }, reject);
   });

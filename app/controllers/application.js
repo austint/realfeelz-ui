@@ -19,6 +19,7 @@ export default Ember.ArrayController.extend({
           CaptchaUtil.verify().then(function(result) {
             self.set('verifyingCaptcha', false);
             var verified = result.verified;
+            console.log(verified);
 
             if (verified === true) {
               // Submits the statement after captcha verification returns true.
