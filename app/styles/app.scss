@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700|Pacifico|PT+Sans|Lato:400,700);
 
-$crumb-bg: #000000;
-$crumb-font-color: #ffffff;
-$crumb-font-color: #ffffff;
-$button-bg-color: #4D7EA8;
+// $crumb-bg: #000000;
+// $crumb-font-color: #ffffff;
+// $crumb-font-color: #ffffff;
+// $button-bg-color: #4D7EA8;
 
 @import 'bower_components/foundation/scss/foundation';
 @import 'bower_components/foundation/scss/normalize';
@@ -30,15 +30,11 @@ $button-bg-color: #4D7EA8;
 }
 
 #home {
-  // text-align: center;
-  // background: url('/assets/images/rising_light_crop.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100%;
-  // padding-left: 5px;
-  // padding-right: 5px;
 }
 
 * {
@@ -90,11 +86,6 @@ footer {
   text-align: center;
 }
 
-// @font-face {
-//   font-family: Aleo-Bold;
-//   src: url("styles/fonts/Aleo-Bold.woff");
-// }
-
 #recaptcha_area, #recaptcha_table {
   margin: 0 auto !important;
   margin-bottom: 1em !important;
@@ -125,6 +116,10 @@ button {
 p {
   text-align: center;
   color: #ffffff;
+}
+
+a {
+  color: #ffffff !important;
 }
 
 .content-a {
