@@ -22,8 +22,8 @@ module.exports = function(environment) {
       'report-uri': "http://localhost:4200",
       'default-src': "'none'",
       'script-src': "'self' 'unsafe-eval' http://www.google.com/recaptcha/",
-      'font-src': "'self' http://fonts.gstatic.com", // Allow fonts to be loaded from http://fonts.gstatic.com
-      'connect-src': "'self' https://realfeelz-server.herokuapp.com/api/",
+      'font-src': "'self' https://fonts.gstatic.com", // Allow fonts to be loaded from http://fonts.gstatic.com
+      'connect-src': "'self' https://realfeelz-server.herokuapp.com/api/ http://localhost:3000/api/",
       'img-src': "'self' http://www.google.com/recaptcha/",
       'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com", // Allow inline styles and loaded CSS from http://fonts.googleapis.com 
       'media-src': "'self'"
@@ -36,6 +36,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.host = 'http://localhost:3000';
   }
 
   if (environment === 'test') {
@@ -48,10 +49,11 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+    ENV.host = 'https://localhost:3000';
   }
 
   if (environment === 'production') {
-
+    ENV.host = 'https://realfeelz-server.herokuapp.com';
   }
 
   return ENV;
