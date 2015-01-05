@@ -5,7 +5,7 @@ export default Ember.View.extend({
     Ember.$(document).ready(function() {
         Ember.$('#fullpage').fullpage({
           anchors: ['firstPage'],
-          sectionsColor: ['#4A6FB1'],
+          // sectionsColor: ['#4A6FB1'],
           autoScrolling: false,
           css3: true
         });
