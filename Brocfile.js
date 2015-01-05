@@ -24,6 +24,8 @@ app.import('bower_components/recaptcha-ajax/recaptcha_ajax.js');
 //
 app.import('bower_components/sticky-kit/jquery.sticky-kit.js');
 
+app.import('vendor/modernizr.custom.86080.js');
+
 // app.import('bower_components/foundation/js/foundation.js');
 // app.import('bower_components/foundation/js/foundation/foundation.magellan.js');
 // app.import('bower_components/foundation/js/foundation/foundation.topbar.js');
