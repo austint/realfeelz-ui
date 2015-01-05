@@ -1,88 +1,118 @@
 @import 'bower_components/foundation/scss/normalize';
 @import 'bower_components/foundation/scss/foundation';
 
-#header, #footer{
-  position:fixed;
-  // height: 50px;
-  // display:block;
-  width: 100%;
-  // background: #333;
-  z-index:2;
-  text-align:center;
-  // position: middle !important;
-  // color: #f2f2f2;
-  // padding: 20px 0 0 0;
+#fullpage { background: url("https://ununsplash.imgix.net/reserve/fawrXCzwSsOUMmJr9GGD_alcatraz.jpg?q=75&fm=jpg&s=581307737e7c9f8b24e46d7e770f5769");
+  // z-index: 1 !important;
 }
 
-.truths {
-  z-index: 1 !important;
-  // position: relative;
-}
-// .download-box {
-//   z-index: 9 !important;
-// }
-// #header{
-//   top:0px;
-// }
 #footer{
+  position:fixed;
+  height: 50px;
+  display:block;
+  width: 100%;
+  background: #333;
+  z-index:11;
+  text-align:center;
+  color: #f2f2f2;
+  padding: 20px 0 0 0;
   bottom:0px;
 }
 
-body {
-  background: url("https://ununsplash.imgix.net/uploads/1413259835094dcdeb9d3/6e609595?q=75&fm=jpg&s=6a4fc66161293fc4a43a6ca6f073d1c5") no-repeat center center fixed !important;
+#header{
+  top:0px;
+  position:fixed;
+  height: 50px;
+  display:block;
+  width: 100%;
+  background: #333;
+  z-index:8;
+  text-align:center;
+  color: #f2f2f2;
+  padding: 20px 0 0 0;
 }
 
-.feature-box {
-  border: 0px !important;
-}
 
-.section-features-pricing {
-  border-top: 0px !important;
-}
+// #footer {
+//   bottom:0px;
+//   position:fixed;
+//   // height: 50px;
+//   // display:block;
+//   width: 100%;
+//   // background: #333;
+//   z-index:9 !important;
+//   text-align:center;
+//   // position: middle !important;
+//   // color: #f2f2f2;
+//   // padding: 20px 0 0 0;
+// }
 
-// .small-centered {
-//   padding: 0px !important;
-//   // margin: 0px !important;
+// #header {
+
+//   position:fixed;
+//   // height: 50px;
+//   // display:block;
+//   width: 100%;
+//   // background: #333;
+//   // z-index:1 !important;
+//   text-align:center;
+//   // position: middle !important;
+//   // color: #f2f2f2;
+//   // padding: 20px 0 0 0;
 // }
-// .flexcenter {
-//   display: -webkit-flex;
-//   display: flex;
-//   -webkit-flex-direction: row;
-//   /* works with row or column */
-//   flex-direction: row;
-//   -webkit-align-items: center;
-//   align-items: center;
-//   -webkit-justify-content: center;
-//   justify-content: center;
-// }
-// // .dlb-form {
-//   padding-top: 20px !important;
-//   background-color: #683422 !important;
-// }
+
 .download-box {
-  padding: 30px !important;
+  z-index: 2 !important;
+  // padding: 30px !important;
 }
 
-ul {
-  // margin: 0px !important;
+div.horizontal {
+    display: flex !important;
+    justify-content: center !important;
 }
-// #sticky_item {
-//   z-index: 2 !important;
+
+div.vertical {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+.truths {
+  // z-index: 2 !important;
+  // position: relative;
+}
+
+html {
+  overflow: hidden;
+}
+
+.section{
+  text-align:center;
+}
+
+// h3 h4 {
+//   color: #2196F3 !important; //
+//   margin:0;
+//   padding:0;
 // }
 
-
-
-// * {
-//   margin: 0;
-//   padding: 0;
+// .ember-application {
+//   background: url("https://ununsplash.imgix.net/reserve/fawrXCzwSsOUMmJr9GGD_alcatraz.jpg?q=75&fm=jpg&s=581307737e7c9f8b24e46d7e770f5769") no-repeat center center fixed !important;
 // }
 
-// body {
-//   -webkit-background-size: cover;
-//   -moz-background-size: cover;
-//   -o-background-size: cover;
-//   background-size: cover;
-// }
+#page-wrap {
+  z-index: 10;
+  position: relative;
+  // width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  // background: url("https://ununsplash.imgix.net/reserve/fawrXCzwSsOUMmJr9GGD_alcatraz.jpg?q=75&fm=jpg&s=581307737e7c9f8b24e46d7e770f5769") no-repeat center center fixed !important;
+  -moz-box-shadow: 0 0 20px black;
+  -webkit-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
+  // height: 100% !important;
+}
 
 #bg {
   // -webkit-background-size: cover;
@@ -99,19 +129,57 @@ ul {
 .bgheight {
   height: 100%;
 }
-#page-wrap {
-  // position: relative;
-  // width: 400px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background: url("https://unsplash.imgix.net/photo-1416424312427-baefa7707d85?q=75&fm=jpg&s=b2ec9ff1f29da95d081f2c1155020fcc") no-repeat center center fixed !important;
-  -moz-box-shadow: 0 0 20px black;
-  -webkit-box-shadow: 0 0 20px black;
-  box-shadow: 0 0 20px black;
-  // height: 100% !important;
+
+
+.feature-box {
+  border: 0px !important;
 }
+
+.section-features-pricing {
+  border-top: 0px !important;
+}
+
+.dlb-form {
+  padding-top: 20px !important;
+  background: none !important;
+}
+
+ul {
+  // margin: 0px !important;
+}
+
+
+// #sticky_item {
+//   z-index: 2 !important;
+// }
+
+// .small-centered {
+//   padding: 0px !important;
+//   // margin: 0px !important;
+// }
+// .flexrow {
+//   display: -webkit-flex;
+//   display: flex;
+//   -webkit-flex-direction: row;
+//   /* works with row or column */
+//   flex-direction: row;
+//   -webkit-align-items: center;
+//   align-items: center;
+//   -webkit-justify-content: center;
+//   justify-content: center;
+// }
+
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
+
+// body {
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// }
 
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic);
 /*==================================================================================================
@@ -696,13 +764,15 @@ header h2 {
   letter-spacing: 0;
   text-transform: none;
   text-align: center;
-  color: #ebe3e2;
+  // color: #ebe3e2;
+  color: #3A3E49;
 }
 /* line 266, ../scss/_custom.scss */
 
 header h2 a {
   text-decoration: none;
   color: #ebe3e2;
+  color: #3A3E49;
   padding: 0.5em;
   border: 2px solid #cfc6c5;
 }

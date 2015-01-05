@@ -1,21 +1,26 @@
-{{!-- {{view 'stickykit-view'}} --}}
 {{view 'fullpage-view'}}
+{{!-- {{view 'stickykit-view'}} --}}
 {{!-- {{view 'fullbackground-view'}} --}}
 
-{{!-- <img src="/assets/images/rising_light_crop.jpg" id="bg" alt=""> --}}
+<div id="header">
+{{!--     <div class="horizontal div1">
+        <div class="vertical"> --}}
+            <div class="row">
+              <div class="small-12 small-centered columns">
+                <div class="realfeelz">
+                  <h2>{{#link-to 'willamette'}}RealFeelz{{/link-to}}</h2>
+                  <h3>What's Real For Your Right Now?</h3>
+                  <h4>Anonymously Share What's True For You</h4>
+                </div>
+              </div>
+            </div>
+{{!--         </div>
+    </div> --}}
+</div>
 
 <div id="footer">
-<div class="section-hero section-bg-color1">
-  <div class="row">
-    <div class="small-12 small-centered columns">
-      <header class="realfeelz">
-        <h2>{{#link-to 'willamette'}}RealFeelz{{/link-to}}</h2>
-        <h3>What's Real For Your Right Now?</h3>
-        <h4>Anonymously Share What's True For You</h4>
-      </header>
-    </div>
-  </div>
-  </div>
+  {{!-- <div class="section-hero section-bg-color1"> --}}
+  {{!-- </div> --}}
   <div class="section-hero section-bg-color1">
     <div class="row">
       <div class="small-12 small-centered columns">
@@ -47,32 +52,23 @@
 
 <div id="fullpage">
   <div class="section">
-
   </div>
 </div>
 
-{{!--   <div class="row" id="page-wrap">
-    <div class="small-12 medium-10 large-10 small-centered columns"> --}}
-      {{!-- <div id="page-wrap"> --}}
-        <div class="section-hero section-bg-color1">
-          <div class="row" id="page-wrap">
-            <div class="small-12 small-centered columns">
-              <div class="download-box">
-                <div id="mc_embed_signup">
-                  <ul>
-                    {{#each}}
-                    <p class="truths">{{body}}</p>
-                    {{/each}}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+<div class="row" id="page-wrap">
+  <div class="section-hero section-bg-color1">
+    <div class="small-12 small-centered columns">
+      <div class="download-box">
+        <div id="mc_embed_signup">
+          <ul>
+            {{#each}}
+            <p class="truths">{{body}}</p>
+            {{/each}}
+          </ul>
         </div>
-      {{!-- </div> --}}
+      </div>
     </div>
   </div>
-
   <footer class="section-bg-color2">
     <div class="row">
       <div class="small-12 medium-12 large-12 columns">
@@ -83,3 +79,6 @@
       </div>
     </div>
   </footer>
+</div>
+
+
