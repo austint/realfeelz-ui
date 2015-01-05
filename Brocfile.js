@@ -24,7 +24,7 @@ app.import('bower_components/recaptcha-ajax/recaptcha_ajax.js');
 //
 app.import('bower_components/sticky-kit/jquery.sticky-kit.js');
 
-app.import('vendor/modernizr.custom.86080.js');
+// app.import('vendor/modernizr.custom.86080.js');
 
 // app.import('bower_components/foundation/js/foundation.js');
 // app.import('bower_components/foundation/js/foundation/foundation.magellan.js');
@@ -36,7 +36,7 @@ app.import('vendor/modernizr.custom.86080.js');
 
 app.import('bower_components/fullpage.js/jquery.fullPage.js');
 // fullpage css incompatible with fullbackground page scrolling functionality
-// app.import('bower_components/fullpage.js/jquery.fullPage.css');
+app.import('bower_components/fullpage.js/jquery.fullPage.css');
 
 // app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js');
 // app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js');

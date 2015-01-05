@@ -1,82 +1,24 @@
-{{view 'stickykit-view'}}
-{{view 'fullbackground-view'}}
+{{!-- {{view 'stickykit-view'}} --}}
+{{view 'fullpage-view'}}
+{{!-- {{view 'fullbackground-view'}} --}}
 
-<body id="page">
-  <ul class="cb-slideshow">
-    <li><span>Image 01</span>
-      <div>
-        <img src="https://unsplash.imgix.net/photo-1416424312427-baefa7707d85?q=75&fm=jpg&s=b2ec9ff1f29da95d081f2c1155020fcc">
-      </div>
-    </li>
-    <li><span>Image 02</span>
-      <div>
-        <img src="https://unsplash.imgix.net/photo-1416424312427-baefa7707d85?q=75&fm=jpg&s=b2ec9ff1f29da95d081f2c1155020fcc">
-      </div>
-    </li>
-    <li><span>Image 03</span>
-      <div>
-        <img src="https://unsplash.imgix.net/photo-1416424312427-baefa7707d85?q=75&fm=jpg&s=b2ec9ff1f29da95d081f2c1155020fcc">
-      </div>
-    </li>
-    <li><span>Image 04</span>
-      <div>
-        <img src="https://unsplash.imgix.net/photo-1416424312427-baefa7707d85?q=75&fm=jpg&s=b2ec9ff1f29da95d081f2c1155020fcc">
-      </div>
-    </li>
-    <li><span>Image 05</span>
-      <div>
-        <img src="https://unsplash.imgix.net/photo-1416424312427-baefa7707d85?q=75&fm=jpg&s=b2ec9ff1f29da95d081f2c1155020fcc">
-      </div>
-    </li>
-    <li><span>Image 06</span>
-      <div>
-        <img class="bg" src="https://unsplash.imgix.net/photo-1416424312427-baefa7707d85?q=75&fm=jpg&s=b2ec9ff1f29da95d081f2c1155020fcc">
-      </div>
-    </li>
-  </ul>
-  <div class="container">
-    <!-- Codrops top bar -->
-    <div class="codrops-top">
-      <span>RealFeelz</span>
-      <span>About</span>
-      <div class="clr"></div>
+{{!-- <img src="/assets/images/rising_light_crop.jpg" id="bg" alt=""> --}}
+
+<div id="footer">
+<div class="section-hero section-bg-color1">
+  <div class="row">
+    <div class="small-12 small-centered columns">
+      <header class="realfeelz">
+        <h2>{{#link-to 'willamette'}}RealFeelz{{/link-to}}</h2>
+        <h3>What's Real For Your Right Now?</h3>
+        <h4>Anonymously Share What's True For You</h4>
+      </header>
     </div>
-    <!--/ Codrops top bar -->
-
-    <header>
-      <footer class="section-bg-color2">
-        <div class="row">
-          <div class="small-12 medium-12 large-12 columns">
-            <ul>
-              <li>
-                <div class="row">
-                  <div class="small-12 medium-10 large-10 small-centered columns">
-                    <header>
-                      <h2>{{#link-to 'willamette'}}RealFeelz{{/link-to}}</h2>
-                      <h3>What's Real For Your Right Now?</h3>
-                      <h4>Anonymously Share What's True For You</h4>
-                    </header>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="small-12 medium-12 large-12 columns">
-            <ul>
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
-    </header>
-</body>
-
-<div id="sticky_item">
+  </div>
+  </div>
   <div class="section-hero section-bg-color1">
     <div class="row">
-      <div class="small-12 medium-10 large-10 small-centered columns">
+      <div class="small-12 small-centered columns">
         <div class="download-box dlb-form">
           <div id="mc_embed_signup">
             <form {{action "postStatement" newPost on="submit" }}>
@@ -101,34 +43,43 @@
     </div>
   </div>
 </div>
-<div class="row">
-  <div class="small-12 medium-10 large-10 small-centered columns">
-    <div id="page-wrap">
-      <div class="section-hero section-bg-color1">
-        <div class="row">
-          <div class="small-12 medium-10 large-10 small-centered columns">
-            <div class="download-box">
-              {{!-- <div id="mc_embed_signup"> --}}
-                <ul>
-                  {{#each}}
-                  <p class="truths">{{body}}</p>
-                  {{/each}}
-                </ul>
-              {{!-- </div> --}}
+
+
+<div id="fullpage">
+  <div class="section">
+
+  </div>
+</div>
+
+{{!--   <div class="row" id="page-wrap">
+    <div class="small-12 medium-10 large-10 small-centered columns"> --}}
+      {{!-- <div id="page-wrap"> --}}
+        <div class="section-hero section-bg-color1">
+          <div class="row" id="page-wrap">
+            <div class="small-12 small-centered columns">
+              <div class="download-box">
+                <div id="mc_embed_signup">
+                  <ul>
+                    {{#each}}
+                    <p class="truths">{{body}}</p>
+                    {{/each}}
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      {{!-- </div> --}}
+    </div>
+  </div>
+
+  <footer class="section-bg-color2">
+    <div class="row">
+      <div class="small-12 medium-12 large-12 columns">
+        <ul>
+          <li>&copy;2014 {{#link-to 'whatsreal'}}RealFeelz{{/link-to}}</li>
+          <li>{{#link-to 'about'}}About{{/link-to}}</li>
+        </ul>
       </div>
     </div>
-  </div>
-</div>
-<footer class="section-bg-color2">
-  <div class="row">
-    <div class="small-12 medium-12 large-12 columns">
-      <ul>
-        <li>&copy;2014 {{#link-to 'whatsreal'}}RealFeelz{{/link-to}}</li>
-        <li>{{#link-to 'about'}}About{{/link-to}}</li>
-      </ul>
-    </div>
-  </div>
-</footer>
+  </footer>
