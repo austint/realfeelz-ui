@@ -1,0 +1,29 @@
+{{view "malihu-view"}}
+
+<div id="demo">
+  <section id="info">
+    <p>
+      <a href="#" class="auto-scrolling-toggle">Toggle auto-scrolling</a>
+    </p>
+  </section>
+  <section id="examples">
+    <div id="content-1" class="content">
+      <h2>Truth, Confession, Awareness, Connection</h2>
+      <hr />
+      <ul>
+        {{#each}}
+        <p class="truths">{{body}}</p>
+        {{/each}}
+      </ul>
+      <hr />
+    </div>
+
+  </section>
+</div>
+
+<hr/>
+<div class="row">
+  <div class="small-12 medium-10 large-8 columns">
+    <p id="copyright">{{#link-to 'fullpage'}}©RealFeelz 2014{{/link-to}}</p>
+  </div>
+</div>
