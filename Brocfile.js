@@ -34,6 +34,9 @@ app.import('bower_components/sticky-kit/jquery.sticky-kit.js');
 // app.import('bower_components/foundation/js/vendor/jquery.cookie.js');
 // app.import('bower_components/foundation/js/vendor/placeholder.js');
 
+app.import('bower_components/slick.js/slick/slick.js');
+app.import('bower_components/slick.js/slick/slick.css');
+
 app.import('bower_components/fullpage.js/jquery.fullPage.js');
 // fullpage css incompatible with fullbackground page scrolling functionality
 app.import('bower_components/fullpage.js/jquery.fullPage.css');

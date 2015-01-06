@@ -36,7 +36,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     ENV.APP.LOG_VIEW_LOOKUPS = true;
-    ///// ENV.host = 'http://localhost:3000';
+    ENV.host = 'http://localhost:3000';
   }
 
   if (environment === 'test') {
@@ -49,11 +49,11 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
-    ///// ENV.host = 'https://localhost:3000';
+    ENV.host = 'https://localhost:3000';
   }
 
   if (environment === 'production') {
-    /////ENV.host = 'https://realfeelz-server.herokuapp.com';
+    ENV.host = 'https://realfeelz-server.herokuapp.com';
   }
 
   return ENV;

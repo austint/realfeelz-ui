@@ -1,17 +1,11 @@
 @import 'bower_components/foundation/scss/normalize';
 @import 'bower_components/foundation/scss/foundation';
-
-.ember-view {
-  background: url("https://ununsplash.imgix.net/reserve/m6rT4MYFQ7CT8j9m2AEC_JakeGivens%20-%20Sunset%20in%20the%20Park.JPG?q=75&fm=jpg&s=0be046e174fb7a1c83e882cef651959a") no-repeat center center fixed;
-}
-
 #fullpage {
   background: url("https://ununsplash.imgix.net/reserve/m6rT4MYFQ7CT8j9m2AEC_JakeGivens%20-%20Sunset%20in%20the%20Park.JPG?q=75&fm=jpg&s=0be046e174fb7a1c83e882cef651959a") no-repeat center center fixed !important;
-  // margin-right: 15px;
-  // margin-left: 15px;
-  // -moz-box-shadow: 0 0 20px black;
-  // -webkit-box-shadow: 0 0 20px black;
-  // box-shadow: 0 0 20px black;
+  margin: 15px;
+  -moz-box-shadow: 0 0 20px black;
+  -webkit-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
 }
 #footer {
   position: fixed;
@@ -44,14 +38,12 @@ button {
 
 .small-centered {
   padding: 0px !important;
-  // background: #000000;
 }
 .download-box {
-  z-index: 2 !important;
+  z-index: 9 !important;
   -moz-box-shadow: 0 0 20px black;
   -webkit-box-shadow: 0 0 20px black;
   box-shadow: 0 0 20px black;
-  // padding: 0px !important;
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -89,14 +81,14 @@ div.vertical {
   // background: #607D8B;
   position: relative;
   // width: 400px;
-  margin: 0px;
+  // margin-top: 0px;
   // margin-right: 20px;
-  // padding: 15px !important;
+  padding: 15px !important;
   // background: white;
   -moz-box-shadow: 0 0 20px black;
   -webkit-box-shadow: 0 0 20px black;
   box-shadow: 0 0 20px black;
-  z-index: 10;
+  // z-index: 10;
 }
 
 // .feature-box {
@@ -108,8 +100,6 @@ div.vertical {
 .dlb-form {
   padding-top : 0px !important;
   padding-bottom : 0px !important;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
   // background: none !important;
 }
 ul {
