@@ -1,11 +1,17 @@
 @import 'bower_components/foundation/scss/normalize';
 @import 'bower_components/foundation/scss/foundation';
+
+html, body {
+  background: #3A3E49 !important;
+}
+
 #fullpage {
   background: url("https://ununsplash.imgix.net/reserve/m6rT4MYFQ7CT8j9m2AEC_JakeGivens%20-%20Sunset%20in%20the%20Park.JPG?q=75&fm=jpg&s=0be046e174fb7a1c83e882cef651959a") no-repeat center center fixed !important;
   margin: 15px;
   -moz-box-shadow: 0 0 20px black;
   -webkit-box-shadow: 0 0 20px black;
   box-shadow: 0 0 20px black;
+  z-index: 1;
 }
 #footer {
   position: fixed;
