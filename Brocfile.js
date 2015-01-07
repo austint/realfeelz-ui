@@ -20,4 +20,44 @@ var app = new EmberApp();
 // app.import('vendor/captcha/captcha.js');
 app.import('bower_components/recaptcha-ajax/recaptcha_ajax.js');
 
-module.exports = app.toTree();
+app.import('bower_components/sticky-kit/jquery.sticky-kit.js');
+
+// app.import('vendor/slideme2/jquery.slideme2.js');
+// app.import('vendor/slideme2/slideme.css');
+
+// app.import('bower_components/slick.js/slick/slick.js');
+// app.import('bower_components/slick.js/slick/slick.css');
+
+app.import('vendor/stickUp/stickUp.js');
+
+// app.import('bower_components/foundation/js/foundation.js');
+// app.import('bower_components/foundation/js/foundation/foundation.magellan.js');
+// app.import('bower_components/foundation/js/foundation/foundation.topbar.js');
+// app.import('bower_components/foundation/js/vendor/modernizr.js');
+// app.i`mport('bower_components/foundation/js/vendor/fastclick.js');
+// app.import('bower_components/foundation/js/vendor/jquery.cookie.js');
+// app.import('bower_components/foundation/js/vendor/placeholder.js');
+
+// app.import('bower_components/fullpage.js/jquery.fullPage.js');
+// fullpage css incompatible with fullbackground page scrolling functionality
+// app.import('bower_components/fullpage.js/jquery.fullPage.css');
+
+// app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js');
+// app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js');
+// app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css');
+// app.import('bower_components/jquery-mousewheel/jquery.mousewheel.js');
+//
+// app.import('bower_components/jquery-sticky/jquery.sticky.js');
+
+// app.import('vendor/jquery-easy-ticker-master/jquery.easy-ticker.js');
+// app.import('vendor/jquery-easy-ticker-master/test/jquery.easing.min.js');
+//
+app.import('bower_components/flickerplate/js/flickerplate.js');
+app.import('bower_components/flickerplate/js/jquery-v1.10.2.js');
+app.import('bower_components/flickerplate/js/modernizr-custom-v2.7.1.js');
+app.import('bower_components/flickerplate/css/flickerplate.css');
+
+// app.import('bower_components/onepage-scroll/jquery.onepage-scroll.js');
+// app.import('bower_components/onepage-scroll/onepage-scroll.css');
+
+module.exports = app.toTree()
