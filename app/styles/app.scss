@@ -26,7 +26,11 @@ html, body {
   bottom: 0px;
 }
 #header {
-  top: 0px;
+  position: relative;
+  top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);  // top: 0px;
   position: fixed;
   // height: 50px;
   // display: block;
@@ -106,7 +110,7 @@ div.vertical {
 .dlb-form {
   padding-top : 0px !important;
   padding-bottom : 0px !important;
-  // background: none !important;
+  background: none !important;
 }
 ul {
   margin: 0px !important;
