@@ -33,15 +33,14 @@ app.import('bower_components/webplate/core/js/min/webplate.min.js');
 app.import('bower_components/webplate/core/css/webplate.css');
 app.import('bower_components/webplate/project/icon-font/icomoon/style.css');
 app.import('bower_components/webplate/project/ui/stripe/style.css');
+app.import('bower_components/webplate/project/ui/stripe/script.js');
 app.import('bower_components/webplate/stack.js');
 
 // app.import('bower_components/webplate/core/js/jquery.js');
 // app.import('bower_components/webplate/core/js/modernizr.js');
 // app.import('bower_components/webplate/core/js/hammer.js');
 // app.import('bower_components/webplate/core/js/flickerplate.js');
-// app.import('bower_components/webplate/core/css/webplate.css');
 
-// app.import('bower_components/webplate/project/ui/stripe/script.js');
 
 // app.import('bower_components/hammerjs/hammer.js');
 // app.import('bower_components/jquery-hammerjs/jquery.hammer.js');
