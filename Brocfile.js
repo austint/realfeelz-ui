@@ -20,6 +20,9 @@ var app = new EmberApp();
 // app.import('vendor/captcha/captcha.js');
 app.import('bower_components/recaptcha-ajax/recaptcha_ajax.js');
 
+app.import('bower_components/hammerjs/hammer.js');
+app.import('bower_components/jquery-hammerjs/jquery.hammer.js');
+
 // app.import('bower_components/webplate/stack.js');
 // app.import('bower_components/webplate/core/js/min/webplate.min.js');
 
@@ -32,15 +35,6 @@ app.import('bower_components/recaptcha-ajax/recaptcha_ajax.js');
 // app.import('bower_components/webplate/project/ui/stripe/script.js');
 // app.import('bower_components/webplate/project/ui/stripe/style.css');
 
-// app.import('bower_components/fullpage.js/jquery.fullPage.js');
-// fullpage css incompatible with fullbackground page scrolling functionality
-// app.import('bower_components/fullpage.js/jquery.fullPage.css');
-
-// app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js');
-// app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js');
-// app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css');
-// app.import('bower_components/jquery-mousewheel/jquery.mousewheel.js');
-//
 app.import('bower_components/flickerplate/css/flickerplate.css');
 app.import('bower_components/flickerplate/js/flickerplate.js');
 // app.import('bower_components/flickerplate/js/jquery-v1.10.2.js');
