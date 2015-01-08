@@ -24,7 +24,8 @@
     "jquery-placeholder": "2.1.0",
     "sticky-kit": "~1.1.1",
     "webplate": "~2.5.9",
-    "jquery-hammerjs": "~2.0.0"
+    "jquery-hammerjs": "~2.0.0",
+    "fullpage.js": "~2.5.2"
   },
   "resolutions": {
     "chai": "~1.10.0",

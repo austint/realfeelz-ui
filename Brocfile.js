@@ -23,6 +23,10 @@ app.import('bower_components/recaptcha-ajax/recaptcha_ajax.js');
 app.import('bower_components/hammerjs/hammer.js');
 app.import('bower_components/jquery-hammerjs/jquery.hammer.js');
 
+app.import('bower_components/fullpage.js/jquery.fullPage.js');
+// fullpage css incompatible with fullbackground page scrolling functionality
+// app.import('bower_components/fullpage.js/jquery.fullPage.css');
+
 // app.import('bower_components/webplate/stack.js');
 // app.import('bower_components/webplate/core/js/min/webplate.min.js');
 
