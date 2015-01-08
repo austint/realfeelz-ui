@@ -1,51 +1,52 @@
 {{view 'flickerplate-view'}}
-{{view 'stickup-view'}}
+{{view 'stickykit-view'}}
 {{!-- {{view 'fullbackground-view'}} --}}
-<header class="stripe full" style="height: 923px;">
+<header class="stripe full">
   <div class="contain">
-    <a href="#" class="scroll-down icon-angle-down" style="margin-top: 823px;"></a>
+    <a href="#" class="scroll-down icon-angle-down"></a>
   </div>
   <!-- Flicker -->
-  <div class="flickerplate">
-    <div class="slideshow bg-image animate-transform-slide flicker-theme-light">
+  <div class="realfeelz-flickerplate bg-image">
       <ul class="flicks">
-        <li data-background="https://ununsplash.imgix.net/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?q=75&fm=jpg&s=2857080adb1de5db2cbddb6d230954bc" style="background-image: url(https://ununsplash.imgix.net/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?q=75&fm=jpg&s=2857080adb1de5db2cbddb6d230954bc);">
+        <li data-background="https://ununsplash.imgix.net/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?q=75&fm=jpg&s=2857080adb1de5db2cbddb6d230954bc">
           <div class="flick-inner">
-            <div class="flick-content">
-              <div class="flick-title">{{#link-to 'index'}}RealFeelz{{/link-to}}</div>
-              <div class="flick-title">What's Real For You Right Now?</div>
-            </div>
+            {{!-- <div class="flick-content"> --}}
+              <div class="flick-title">{{#link-to 'index'}}RealFeelz{{/link-to}}
+              </div>
+              <div class="flick-title">What's Real For You Right Now?
+              </div>
+            {{!-- </div> --}}
           </div>
         </li>
-        <li data-background="https://unsplash.imgix.net/reserve/wVlfnlTbRtK8eGvbnBZI_VolkanOlmez_005.jpg?q=75&fm=jpg&s=de70d125f08a3fbb40d6b9984af5c3ad" style="background-image: url(https://unsplash.imgix.net/reserve/wVlfnlTbRtK8eGvbnBZI_VolkanOlmez_005.jpg?q=75&fm=jpg&s=de70d125f08a3fbb40d6b9984af5c3ad);">
+        <li data-background="https://unsplash.imgix.net/reserve/wVlfnlTbRtK8eGvbnBZI_VolkanOlmez_005.jpg?q=75&fm=jpg&s=de70d125f08a3fbb40d6b9984af5c3ad">
           <div class="flick-inner">
             <div class="flick-content">
               <div class="flick-title">{{#link-to 'index'}}Confession{{/link-to}}</div>
             </div>
           </div>
         </li>
-        <li data-background="https://unsplash.imgix.net/uploads/14116941824817ba1f28e/78c8dff1?q=75&fm=jpg&s=eed337dca5e9e4ca8b8d23513e6b9bf6" style="background-image: url(https://unsplash.imgix.net/uploads/14116941824817ba1f28e/78c8dff1?q=75&fm=jpg&s=eed337dca5e9e4ca8b8d23513e6b9bf6);">
+        <li data-background="https://unsplash.imgix.net/uploads/14116941824817ba1f28e/78c8dff1?q=75&fm=jpg&s=eed337dca5e9e4ca8b8d23513e6b9bf6">
           <div class="flick-inner">
             <div class="flick-content">
               <div class="flick-title">{{#link-to 'index'}}Truth{{/link-to}}</div>
             </div>
           </div>
         </li>
-        <li data-background="https://ununsplash.imgix.net/44/C3EWdWzT8imxs0fKeKoC_blackforrest.JPG?q=75&fm=jpg&s=871d9503e2cbec376305a97d64ff3b23" style="background-image: url(https://ununsplash.imgix.net/44/C3EWdWzT8imxs0fKeKoC_blackforrest.JPG?q=75&fm=jpg&s=871d9503e2cbec376305a97d64ff3b23);">
+        <li data-background="https://ununsplash.imgix.net/44/C3EWdWzT8imxs0fKeKoC_blackforrest.JPG?q=75&fm=jpg&s=871d9503e2cbec376305a97d64ff3b23">
           <div class="flick-inner">
             <div class="flick-content">
               <div class="flick-title">{{#link-to 'index'}}Awareness{{/link-to}}</div>
             </div>
           </div>
         </li>
-        <li data-background="https://unsplash.imgix.net/reserve/tlC8KhNJR0CA2xdomLfx_DSC_0358-2.jpg?q=75&fm=jpg&s=c5c66c8958c2c6ddced808e608302fe7" style="background-image: url(https://ununsplash.imgix.net/44/C3EWdWzT8imxs0fKeKoC_blackforrest.JPG?q=75&fm=jpg&s=871d9503e2cbec376305a97d64ff3b23);">
-          <div class="flick-inner">
+        <li data-background="https://unsplash.imgix.net/reserve/tlC8KhNJR0CA2xdomLfx_DSC_0358-2.jpg?q=75&fm=jpg&s=c5c66c8958c2c6ddced808e608302fe7">
+          {{!-- <div class="flick-inner"> --}}
             <div class="flick-content">
               <div class="flick-title">{{#link-to 'index'}}Connection{{/link-to}}</div>
             </div>
           </div>
         </li>
-        <li data-background="https://ununsplash.imgix.net/46/yzS7SdLJRRWKRPmVD0La_creditcard.jpg?q=75&fm=jpg&s=7cc01cbdd45363cc0e2e8340b185bca2" style="background-image: url(https://ununsplash.imgix.net/46/yzS7SdLJRRWKRPmVD0La_creditcard.jpg?q=75&fm=jpg&s=7cc01cbdd45363cc0e2e8340b185bca2);">
+        <li data-background="https://ununsplash.imgix.net/46/yzS7SdLJRRWKRPmVD0La_creditcard.jpg?q=75&fm=jpg&s=7cc01cbdd45363cc0e2e8340b185bca2">
           <div class="flick-inner">
             <div class="flick-content">
               <div class="flick-title">{{#link-to 'index'}}{{/link-to}}</div>
@@ -53,73 +54,5 @@
           </div>
         </li>
       </ul>
-    </div>
-  </header>
-</div>
-</div>
-{{!-- <div id="page-wrap"> --}}
-  <div class="row">
-    <div class="small-12 medium-10 large-10 small-centered columns">
-      <div class="row">
-        <div class="small-12 medium-10 large-10 small-centered columns">
-          <header class="realfeelz heavy">
-            <h2>{{#link-to 'flickerplate'}}RealFeelz{{/link-to}}</h2>
-            <h3>What's Real For Your Right Now?</h3>
-            <h4>Anonymously Share Your Truth</h4>
-          </header>
-        </div>
-      </div>
-    </div>
   </div>
-{{!-- </div> --}}
-<div id="sticky_item">
-  <div class="section-hero section-bg-color1">
-    <div class="row">
-      <div class="small-12 medium-10 large-10 small-centered columns">
-        <div class="download-box dlb-form">
-          <div id="mc_embed_signup">
-            <form {{action "postStatement" newPost on="submit" }}>
-              {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
-              <div id="recaptcha"></div>
-              <div class="status-text">
-                {{#if verifyingCaptcha}}
-                <p>Verifying Captcha...</p>
-                {{/if}} {{#if showingCaptcha}}
-                <p>Getting a Captcha...</p>
-                {{/if}} {{#if captchaVerified }}
-                <p>Now that we know you are a human, hit post again to share.</p>
-                {{/if}} {{#if tryAgain}}
-                <p>Try again...</p>
-                {{/if}}
-              </div>
-              <button class="button radius" type="submit">Post</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section-hero section-bg-color1">
-  <div class="row">
-    <div class="small-12 medium-10 large-10 small-centered columns">
-      <div class="download-box">
-        <ul>
-          {{#each}}
-          <p class="truths">{{body}}</p>
-          {{/each}}
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<footer class="section-bg-color2">
-  <div class="row">
-    <div class="small-12 medium-12 large-12 columns">
-      <ul>
-        <li>&copy;2014 {{#link-to 'flickerplate'}}RealFeelz{{/link-to}}</li>
-        <li>{{#link-to 'about'}}About{{/link-to}}</li>
-      </ul>
-    </div>
-  </div>
-</footer>
+<header>
