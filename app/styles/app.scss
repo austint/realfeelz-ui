@@ -1,13 +1,32 @@
-// @import 'bower_components/foundation/scss/normalize';
 @import 'bower_components/webplate/core/sass/import.scss';
-// @import 'bower_components/webplate/project/ui/stripe/style.scss';
-// @import 'bower_components/webplate/project/ui/stripe/sass/_variables.scss';
-// @import 'bower_components/webplate/project/ui/stripe/sass/component/_modal.scss';
-// @import 'bower_components/webplate/core/sass/modalplate/_overlay.scss';
-// @import 'bower_components/webplate/project/ui/stripe/sass/component/_header.scss';
+// @import 'bower_components/foundation/scss/normalize';
 // @import 'bower_components/foundation/scss/foundation';
-.bg-image {
-  background: url("/assets/images/background.jpg") !important;
-}
+//
+// .bg-image {
+//   background: url("/assets/images/background.jpg") !important;
+// }
+// .flicks {
+//   -webkit-transform:translate3d(-1%, 0, 0);
+//   -o-transform:translate3d(-1%, 0, 0);
+//   -moz-transform:translate3d(-1%, 0, 0);
+//   transform:translate3d(-1%, 0, 0)
+// }
+
+// .flickerplate {
+// //   position: absolute;
+// //   top: 0;
+// //   left: 0;
+// //   max-width: 100%;
+//   height: 100%;
+// //   background-image: url("img/background.jpg") no-repeat center center fixed;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// //   z-index: 0;
+// //   overflow: hidden;
+//   // -webkit-transform: translate3d(0px, 82.6666666666667px, 0px);
+//   // transform: translate3d(0px, 82.6666666666667px, 0px);
+// }
 
 

@@ -1,463 +1,349 @@
-{{!-- {{view 'flickerplate-view'}} --}}
+{{view 'flickerplate-view'}}
 
 <body style="display: block;" data-icon-font="icomoon" data-ui="stripe" class="invert">
-  <!-- Navigation -->
   <a href="#" class="navigation-trigger icon-menu small-show scroll-position"></a>
-  <nav class="absolute"><div class="contain">
-    <ul class="navigation">
-      <li>
-        <a href="#">BASIC ELEMENTS<span class="icon-angle-down"></span></a>
-        <ul>
-          <li><a href="#stripe-buttons">Buttons</a></li>
-          <li><a href="#stripe-inputs">Inputs</a></li>
-          <li><a href="#stripe-layouts">Layouts</a></li>
-          <li><a href="#stripe-lists">Lists</a></li>
-          <li><a href="#stripe-tables">Tables</a></li>
-          <li><a href="#stripe-text">Text</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">COMPONENTS<span class="icon-angle-down"></span></a>
-        <ul>
-          <li><a href="#stripe-code-reference">Code Reference</a></li>
-          <li><a href="#stripe-download-stripe">Download Stripe</a></li>
-          <li><a href="#stripe-image-hover">Image Hover</a></li>
-          <li><a href="#stripe-login-block">Login Block</a></li>
-          <li><a href="#stripe-modals">Modals</a></li>
-          <li><a href="#stripe-prettify">Prettify</a></li>
-          <li><a href="#stripe-pricing-table">Pricing Table</a></li>
-          <li><a href="#stripe-showcase">Showcase</a></li>
-        </ul>
-      </li>
-      <li><a href="../../../">GO BACK</a></li>
+<nav class="absolute"><div class="contain">
+
+  <ul class="navigation">
+
+      <li><a href="http://getwebplate.com#download">GET WEBPLATE</a></li>
+
+        <li><a href="http://getwebplate.com/documentation">DOCUMENTATION</a></li>
+    <li>
+      <a href="#">UI KITS<span class="icon-angle-down"></span></a>
+      <ul>
+        <li><a href="http://getwebplate.com/bower_components/webplate/project/ui/quill/example.html">Quill UI</a></li>
+        <li><a href="http://getwebplate.com/bower_components/webplate/project/ui/stripe/example.html">Stripe UI</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">PLUGINS<span class="icon-angle-down"></span></a>
+      <ul>
+        <li><a href="http://getwebplate.com/plugins/blueplate">Blueplate</a></li>
+        <li><a href="http://getwebplate.com/plugins/buttonplate">Buttonplate</a></li>
+        <li><a href="http://getwebplate.com/plugins/flickerplate">Flickerplate</a></li>
+        <li><a href="http://getwebplate.com/plugins/formplate">Formplate</a></li>
+        <li><a href="http://getwebplate.com/plugins/modalplate">Modalplate</a></li>
+        <li><a href="http://getwebplate.com/plugins/penplate">Penplate</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="logo-container"><a href="http://getwebplate.com" class="logo-line">WEBPLATE</a></div>
+
+</div></nav>
+<header class="stripe full" style="height: 923px;">
+
+  <span class="web-developer-id-class-details">.contain</span><div class="contain">
+
+    <span class="web-developer-id-class-details">.scroll-down.icon-angle-down</span>{{#link-to 'flickerplate'}}<a class="scroll-down icon-angle-down" style="margin-top: 823px;"></a>{{/link-to}}
+
+  </div>
+
+  <!-- Flicker -->
+  <div class="flickerplate">
+    <div class="slideshow bg-image animate-transform-slide flicker-theme-light">
+      <div class="arrow-navigation left"></div>
+      <div class="arrow-navigation right"></div>
+      <ul class="flicks">
+        <li data-background="https://ununsplash.imgix.net/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?q=75&fm=jpg&s=2857080adb1de5db2cbddb6d230954bc">
+          <div class="flick-inner">
+            <div class="flick-content">
+              <div class="flick-title">{{#link-to 'index'}}RealFeelz{{/link-to}}</div>
+              <div class="flick-title">What's Real For You Right Now?</div>
+            </div>
+          </div>
+        </li>
+        <li data-background="https://unsplash.imgix.net/reserve/wVlfnlTbRtK8eGvbnBZI_VolkanOlmez_005.jpg?q=75&fm=jpg&s=de70d125f08a3fbb40d6b9984af5c3ad">
+          <div class="flick-inner">
+            <div class="flick-content">
+              <div class="flick-title">{{#link-to 'index'}}Confession{{/link-to}}</div>
+            </div>
+          </div>
+        </li>
+        <li data-background="https://unsplash.imgix.net/uploads/14116941824817ba1f28e/78c8dff1?q=75&fm=jpg&s=eed337dca5e9e4ca8b8d23513e6b9bf6">
+          <div class="flick-inner">
+            <div class="flick-content">
+              <div class="flick-title">{{#link-to 'index'}}Truth{{/link-to}}</div>
+            </div>
+          </div>
+        </li>
+        <li data-background="https://ununsplash.imgix.net/44/C3EWdWzT8imxs0fKeKoC_blackforrest.JPG?q=75&fm=jpg&s=871d9503e2cbec376305a97d64ff3b23">
+          <div class="flick-inner">
+            <div class="flick-content">
+              <div class="flick-title">{{#link-to 'index'}}Awareness{{/link-to}}</div>
+            </div>
+          </div>
+        </li>
+        <li data-background="https://unsplash.imgix.net/reserve/tlC8KhNJR0CA2xdomLfx_DSC_0358-2.jpg?q=75&fm=jpg&s=c5c66c8958c2c6ddced808e608302fe7">
+          <div class="flick-inner">
+            <div class="flick-content">
+              <div class="flick-title">{{#link-to 'index'}}Connection{{/link-to}}</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+{{!--  <div class="flickerplate bg-image animate-transform-slide flicker-theme-light" data-auto-flick="true" data-dot-navigation="false" data-block-text="false" data-auto-flick-delay="6" data-flick-position="3" style="-webkit-transform: translate3d(0px, 24.6666666666667px, 0px); transform: translate3d(0px, 24.6666666666667px, 0px);"><span class="web-developer-id-class-details">.arrow-navigation.left</span><div class="arrow-navigation left"></div><span class="web-developer-id-class-details">.arrow-navigation.right</span><div class="arrow-navigation right"></div>
+
+    <span class="web-developer-id-class-details">.flicks</span><ul class="flicks" style="-webkit-transform:translate3d(-2%, 0, 0);-o-transform:translate3d(-2%, 0, 0);-moz-transform:translate3d(-2%, 0, 0);transform:translate3d(-2%, 0, 0)">
+
+      <li data-background="http://getwebplate.com/bower_components/webplate/project/img/flicks/mist.jpg" style="background-image: url(http://getwebplate.com/bower_components/webplate/project/img/flicks/mist.jpg);"><span class="web-developer-id-class-details">.flick-inner</span><div class="flick-inner"><span class="web-developer-id-class-details">.flick-content</span><div class="flick-content">
+
+        <span class="web-developer-id-class-details">.flick-title</span><div class="flick-title">A cool jQuery plugin that lets you flick through content</div>
+
+      </div></div></li>
+      <li data-background="http://getwebplate.com/bower_components/webplate/project/img/flicks/forest.jpg" style="background-image: url(http://getwebplate.com/bower_components/webplate/project/img/flicks/forest.jpg);"><span class="web-developer-id-class-details">.flick-inner</span><div class="flick-inner"><span class="web-developer-id-class-details">.flick-content</span><div class="flick-content">
+
+        <span class="web-developer-id-class-details">.flick-title</span><div class="flick-title">So simple to use, fully responsive and touch enabled</div>
+
+      </div></div></li>
+      <li data-background="http://getwebplate.com/bower_components/webplate/project/img/flicks/mountain-misty.jpg" style="background-image: url(http://getwebplate.com/bower_components/webplate/project/img/flicks/mountain-misty.jpg);"><span class="web-developer-id-class-details">.flick-inner</span><div class="flick-inner"><span class="web-developer-id-class-details">.flick-content</span><div class="flick-content">
+
+        <span class="web-developer-id-class-details">.flick-title</span><div class="flick-title">Hard to believe that it's only 14kb in size</div>
+
+      </div></div></li>
+
     </ul>
-    <div class="logo-container"><a href="#" class="logo-line">STRIPE UI</a></div>
-  </div></nav>
-  <!-- Header -->
-  <header class="stripe full">
-    <div class="contain">
-      <div class="text-center-tight"><div class="inner">
-        <h2>A Fully Integrated UI Kit</h2>
-        <h6>Stripe includes a variety of components from buttons, to inputs, to a full array of layouts designed for all basic websites</h6>
-      </div></div>
-      <a href="#" class="scroll-down icon-angle-down"></a>
-    </div>
-    <div class="bg-image"></div>
-  </header>
-  <!-- Basic elements -->
-  <div class="stripe"><div class="contain">
-    <h3>Basic Elements</h3>
-    <div id="stripe-buttons">
-      <div class="btn-examples">
-        <button class="btn-control">Control Button</button>
-        <button class="btn-download">Download Button</button>
-        <button class="btn-error">Error Button</button>
-        <button class="btn-info">Info Button</button>
-        <button class="btn-link">Link Button</button>
-        <button class="btn-primary">Primary Button</button>
-        <button class="btn-success">Success Button</button>
-        <button class="btn-warning">Warning Button</button>
-      </div>
-    </div>
-    <div id="stripe-inputs" class="col-double">
-      <div class="left">
-        <div class="formplate">
-          <input type="text" placeholder="Text Input" name="text-input">
-        </div>
-        <div class="formplate">
-          <textarea placeholder="Textarea"></textarea>
-        </div>
-      </div>
-      <div class="right">
-        <div class="col-double">
-          <div class="left">
-            <div class="formplate">
-              <input type="checkbox" name="checkbox-1" value="checkbox-1" id="checkbox-1">
-              <label for="checkbox-1">Checkbox 1</label>
-            </div>
-            <div class="formplate">
-              <input type="checkbox" name="checkbox-2" value="checkbox-2" id="checkbox-2">
-              <label for="checkbox-2">Checkbox 2</label>
-            </div>
-            <div class="formplate">
-              <input type="checkbox" name="checkbox-3" value="checkbox-3" id="checkbox-3">
-              <label for="checkbox-3">Checkbox 3</label>
-            </div>
-            <br>
-            <div class="formplate">
-              <select>
-                <option value="1">Select Option 1</option>
-                <option value="2">Select Option 2</option>
-                <option value="3">Select Option 3</option>
-              </select>
-            </div>
-            <br>
-          </div>
-          <div class="right">
-            <div class="formplate">
-              <input type="radio" name="radio" value="radio-1" id="radio-1">
-              <label for="radio-1">Radio 1</label>
-            </div>
-            <div class="formplate">
-              <input type="radio" name="radio" value="radio-2" id="radio-2">
-              <label for="radio-2">Radio 2</label>
-            </div>
-            <div class="formplate">
-              <input type="radio" name="radio" value="radio-3" id="radio-3">
-              <label for="radio-3">Radio 3</label>
-            </div>
-            <br>
-            <div class="formplate">
-              <input type="checkbox" name="toggler" value="toggler" class="toggler">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="stripe-lists" class="col-triple">
-      <div class="left">
-        <ul class="content">
-          <li>List item 1</li>
-          <li>List item 2</li>
-          <li>List item 3</li>
-        </ul>
-      </div>
-      <div class="middle">
-        <ol class="content">
-          <li>Ordered list item 1</li>
-          <li>Ordered list item 2</li>
-          <li>Ordered list item 3</li>
-        </ol>
-      </div>
-      <div class="right">
-        <ul class="flat">
-          <li>Flat list item 1</li>
-          <li>Flat list item 2</li>
-          <li>Flat list item 3</li>
-        </ul>
-      </div>
-    </div>
-    <div id="stripe-tables">
-      <table class="first-blue">
-        <thead>
-          <tr>
-            <th>First Blue</th>
-            <th>Heading</th>
-            <th>Heading</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Table Cell</td>
-            <td>Table Cell</td>
-            <td>Table Cell</td>
-          </tr>
-          <tr>
-            <td>Table Cell</td>
-            <td>Table Cell</td>
-            <td>Table Cell</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div id="stripe-text">
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <h5>Heading 5</h5>
-      <h6>Heading 6</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur <b>adipiscing</b> elit. Donec quis mauris mi. Quisque <i>sodales</i> vel orci eu consequat. Nunc vestibulum aliquet ornare. Quisque adipiscing ipsum at urna aliquet euismod. Mauris aliquam, nisl consectetur aliquam dictum, massa.</p>
-      <p>Nunc vestibulum aliquet ornare. Quisque adipiscing ipsum at urna aliquet euismod. Mauris aliquam, nisl consectetur aliquam dictum, massa. Mauris aliquam, nisl consectetur aliquam dictum, massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat. Nunc vestibulum aliquet ornare.</p>
-      <blockquote>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu <b>consequat</b>. Nunc vestibulum aliquet ornare. Quisque adipiscing ipsum at urna aliquet euismod. Mauris aliquam, nisl consectetur aliquam dictum, massa. Quisque sodales vel orci eu consequat.</p>
-        <p>Nunc vestibulum aliquet ornare. Quisque adipiscing ipsum at urna aliquet euismod. Mauris aliquam, nisl consectetur aliquam dictum, massa. Mauris aliquam, nisl consectetur aliquam dictum, massa.</p>
-      </blockquote>
-      <p><a href="#">Some Cool Link</a></p>
-    </div>
-  </div></div>
-  <!-- Code reference -->
-  <div class="stripe code-reference" id="stripe-code-reference"><div class="contain">
-    <h3>Code Reference</h3>
-    <h5>$.code_reference(<i>$x</i>)</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat.</p>
-    <h5>$.another_reference(<i>$x</i>, <i>$y</i>)</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat.</p>
-  </div></div>
-  <!-- Download stripe -->
-  <div class="stripe" id="stripe-download-stripe"><div class="contain">
-    <div class="download-stripe">
-      <h3>Download Stripe</h3>
-      <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat. Morbi lacinia, ligula sit amet commodo interdum, ligula tortor rhoncus elit, quis.</h6>
-      <div class="left">
-        <a href="#download-stripe" class="btn-download"><span class="icon-cloud-download2"></span>Download Link</a>
-      </div>
-      <div class="right">
-        <a href="#download-stripe" class="btn-link"><span class="icon-github"></span>Get via Github</a>
-      </div>
-    </div>
-  </div></div>
-  <!-- Image hover -->
-  <div class="stripe" id="stripe-image-hover"><div class="contain">
-    <h3>Image Hover</h3>
-    <a href="#image-hover" class="image-hover" data-wallpaper="img/image-1.jpg">
-      <div class="text">
-        <p><span class="title">Some Cool Heading</span>Here is some small additional text</p>
-      </div>
-    </a>
-    <a href="#image-hover" class="image-hover" data-wallpaper="img/image-2.jpg">
-      <div class="text">
-        <p><span class="title">Some Cool Heading</span>Here is some small additional text</p>
-      </div>
-    </a>
-    <a href="#image-hover" class="image-hover" data-wallpaper="img/image-3.jpg">
-      <div class="text">
-        <p><span class="title">Some Cool Heading</span>Here is some small additional text</p>
-      </div>
-    </a>
-  </div></div>
-  <!-- Login block -->
-  <div class="stripe dark" id="stripe-login-block"><div class="contain">
-    <div class="login-block">
-      <div class="content">
-        <h4>Sign In Now</h4>
-        <p>Provide a valid username and password below.</p>
-        <div class="formplate">
-          <input type="text" name="username" placeholder="Username">
-        </div>
-        <div class="formplate">
-          <input type="password" name="password" placeholder="Password">
-        </div>
-      </div>
-      <div class="options">
-        <button type="submit" class="btn-ok">LOGIN</button>
-        <button class="btn-cancel">Forgot Password?</button>
-      </div>
-    </div>
-  </div></div>
-  <!-- Modals -->
-  <div class="stripe" id="stripe-modals"><div class="contain col-double">
-    <h3>Modals</h3>
-    <div class="left">
-      <p>You can open a static modal with regular text or image content.</p>
-      <button class="modal-trigger btn-primary" data-modal-open="modal-static">Open Static Modal</button>
-      <div class="modalplate" data-modal-id="modal-static">
-        <a href="#" class="close icon-cross"></a>
-        <div class="static">
-          <h5>Static Modal</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat. Morbi lacinia, ligula sit amet commodo interdum, ligula tortor rhoncus elit, quis pretium orci nunc nec nisi. Nunc ultrices dui et erat elementum, vel ultricies erat pellentesque. Sed pretium libero ullamcorper turpis malesuada pretium. Fusce vitae ultrices massa. Morbi mollis erat at urna imperdiet, sit amet malesuada lacus pulvinar.</p>
-        </div>
-      </div>
-    </div>
-    <div class="right">
-      <p>You can also create a form based modal.</p>
-      <button class="modal-trigger btn-primary" data-modal-open="modal-form">Open Form Modal</button>
-      <div class="modalplate" data-modal-id="modal-form">
-        <a href="#" class="close icon-cross"></a>
-        <form method="post" action="#">
-          <h5>Form Modal</h5>
-          <label for="profile-pic">Profile Pic</label>
-          <div class="input-outer">
-            <input type="file" name="profile-pic" id="profile-pic">
-          </div>
-          <label for="name">Name</label>
-          <div class="input-outer">
-            <input type="text" name="name" id="name">
-          </div>
-          <label for="email">Email Address</label>
-          <div class="input-outer">
-            <input type="text" name="email" id="email">
-          </div>
-          <label for="password">Your Password</label>
-          <div class="input-outer">
-            <input type="password" name="password" id="password">
-          </div>
-          <div class="options">
-            <button class="btn-cancel close">Cancel</button>
-            <button type="submit" class="btn-ok">Submit</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div></div>
-  <!-- Prettify -->
-  <div class="stripe" id="stripe-prettify"><div class="contain col-double">
-    <h3>Prettify</h3>
-    <div class="left">
-      <p>This is an external included library from <a href="https://code.google.com/p/google-code-prettify/" target="_blank">https://code.google.com/p/google-code-prettify/</a>. Included below or to the right is a basic example of the theme used by Stripe UI for code examples.</p>
-    </div>
-    <div class="right">
+
+  </div> --}}
+
+{{!-- </header> --}}
+
+<div  class="stripe download-stripe"><div class="contain">
+
+  <h3>Get the Plugin</h3>
+  <h5>You can download Flickerplate as a zip file directly or for the latest version get it via Github. Note that this plugin is included within Webplate by default.</h5>
+
+  <div class="left">
+    <a href="https://github.com/chrishumboldt/Flickerplate/archive/master.zip" class="btn-download"><span class="icon-inbox"></span>Flickerplate.zip</a>
+  </div>
+
+  <div class="right">
+    <a href="https://github.com/chrishumboldt/Flickerplate" class="btn-link"><span class="icon-github"></span>Get via Github</a>
+  </div>
+
+</div></div><div class="stripe"><div class="contain">
+
+  <h3>Bower Install</h3>
+
+      <p>This plugin has been registered on <a href="http://bower.io/" target="_blank">Bower</a> and will install the latest stable release. You can do so by running the following command.</p>
+
+
 <pre class="prettyprint linenums showcase-code">
-&lt;div class="example"&gt;
-    // Some basic code examples here
+bower install flickerplate</pre>
+
+
+</div></div><div class="stripe"><div class="contain">
+
+  <h3>Getting Started</h3>
+  <p>This plugin is by definition a <a href="http://jquery.com/">jQuery</a> plugin and so is required. It also requires <a href="http://modernizr.com/">Modernizr</a> for touch detection and the <a href="http://hammerjs.github.io/">Hammer.js</a> library for touch events. Both jQuery and a custom build of Modernizr are supplied in the zip package.</p>
+  <p>See an example below of a basic include.</p>
+
+<pre class="prettyprint linenums showcase-code">
+&lt;head&gt;
+    // Required javascript
+    &lt;script src=&quot;js/min/jquery-v1.10.2.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/min/modernizr-custom-v2.7.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/min/hammer-v2.0.3.min.js&quot;&gt;&lt;/script&gt;
+
+    // Flickerplate
+    &lt;script src=&quot;js/min/flickerplate.min.js&quot;&gt;&lt;/script&gt;
+    &lt;link href=&quot;css/flickerplate.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+&lt;/head&gt;
+</pre>
+
+</div></div><div class="stripe"><div class="contain">
+
+  <h3>Executing Flickerplate</h3>
+  <p>The plugin is executed via <b>Javascript</b> and can be called on any containing class as long as the inner HTML is correct. See an example of both below.</p>
+
+  <p>HTML</p>
+
+<pre class="prettyprint linenums showcase-code">
+&lt;div class="flicker-example"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;div class="flick-title"&gt;Title 1&lt;/div&gt;
+            &lt;div class="flick-sub-text"&gt;Text line 1&lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div class="flick-title"&gt;Title 2&lt;/div&gt;
+            &lt;div class="flick-sub-text"&gt;Text line 2&lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div class="flick-title"&gt;Title 3&lt;/div&gt;
+            &lt;div class="flick-sub-text"&gt;Text line 3&lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
 &lt;/div&gt;
 </pre>
-    </div>
-  </div></div>
-  <!-- Pricing table -->
-  <div class="stripe" id="stripe-pricing-table"><div class="contain">
-    <h3>Pricing Table</h3>
-    <div class="pricing-table">
-      <div class="price-block">
-        <div class="top">
-          <p class="title">THE FREEBIE</p>
-          <p class="price"><span class="currency">$</span>0 <span class="per-month">/ mo</span></p>
-          <p class="sub">conditions apply</p>
-        </div>
-        <div class="bottom">
-          <div class="line"><span class="icon-check"></span>1 User Account</div>
-          <div class="line"><span class="icon-check"></span>500 MB Data</div>
-          <div class="line"><span class="icon-check"></span>Free for life</div>
-        </div>
-        <a href="#" class="btn-signup">SIGN UP</a>
-      </div>
-      <div class="price-block">
-        <div class="top">
-          <p class="title">BASIC PLAN</p>
-          <p class="price"><span class="currency">$</span>9 <span class="per-month">/ mo</span></p>
-          <p class="sub">daily support</p>
-        </div>
-        <div class="bottom">
-          <div class="line"><span class="icon-check"></span>10 User Accounts</div>
-          <div class="line"><span class="icon-check"></span>2 GB Data</div>
-          <div class="line"><span class="icon-check"></span>30 days free</div>
-        </div>
-        <a href="#" class="btn-signup">SIGN UP</a>
-      </div>
-      <div class="price-block">
-        <div class="top">
-          <p class="title">BUSINESS PLAN</p>
-          <p class="price"><span class="currency">$</span>49 <span class="per-month">/ mo</span></p>
-          <p class="sub">daily support</p>
-        </div>
-        <div class="bottom">
-          <div class="line"><span class="icon-check"></span>40 User Accounts</div>
-          <div class="line"><span class="icon-check"></span>40 GB Data</div>
-          <div class="line"><span class="icon-check"></span>30 days free</div>
-        </div>
-        <a href="#" class="btn-signup">SIGN UP</a>
-      </div>
-      <div class="price-block">
-        <div class="top">
-          <p class="title">ENTERPRISE PLAN</p>
-          <p class="price"><span class="currency">$</span>149 <span class="per-month">/ mo</span></p>
-          <p class="sub">24 hr support</p>
-        </div>
-        <div class="bottom">
-          <div class="line"><span class="icon-check"></span><b>UNLIMITED</b> Users</div>
-          <div class="line"><span class="icon-check"></span>150 GB Data</div>
-          <div class="line"><span class="icon-check"></span>60 days free</div>
-        </div>
-        <a href="#" class="btn-signup">SIGN UP</a>
-      </div>
-    </div>
-  </div></div>
-  <!-- Showcase -->
-  <div class="stripe" id="stripe-showcase"><div class="contain">
-    <h3>Showcase</h3>
-    <div class="showcase-list">
-      <a href="#" class="showcase">
-        <div class="image" data-wallpaper="img/image-1.jpg">
-          <div class="caption">
-            <h6>Showcase <b>Title</b></h6>
-            <p>This is a basic caption with extra text for descriptions</p>
-          </div>
-        </div>
-        <div class="text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Donec quis mauris mi.</p>
-        </div>
-      </a>
-      <a href="#" class="showcase">
-        <div class="image" data-wallpaper="img/image-2.jpg">
-          <div class="caption">
-            <h6>Showcase <b>Title</b></h6>
-            <p>This is a basic caption with extra text for descriptions</p>
-          </div>
-        </div>
-        <div class="text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Donec quis mauris mi.</p>
-        </div>
-      </a>
-      <a href="#" class="showcase">
-        <div class="image" data-wallpaper="img/image-3.jpg">
-          <div class="caption">
-            <h6>Showcase <b>Title</b></h6>
-            <p>This is a basic caption with extra text for descriptions</p>
-          </div>
-        </div>
-        <div class="text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Donec quis mauris mi.</p>
-        </div>
-      </a>
-      <a href="#" class="showcase">
-        <div class="image" data-wallpaper="img/image-4.jpg">
-          <div class="caption">
-            <h6>Showcase <b>Title</b></h6>
-            <p>This is a basic caption with extra text for descriptions</p>
-          </div>
-        </div>
-        <div class="text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Donec quis mauris mi.</p>
-        </div>
-      </a>
-    </div>
-  </div></div>
-  <!-- Layout -->
-  <div class="stripe" id="stripe-layouts"><div class="contain">
-    <h3>Layouts</h3>
-    <div class="col-double">
-      <h5>Double Column</h5>
-      <div class="left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat. Morbi lacinia, ligula sit amet commodo interdum, ligula tortor rhoncus elit, quis pretium orci nunc nec nisi. Nunc ultrices.</p></div>
-      <div class="right"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat. Morbi lacinia, ligula sit amet commodo interdum, ligula tortor rhoncus elit, quis pretium orci nunc nec nisi. Nunc ultrices.</p></div>
-    </div>
-    <div class="col-triple">
-      <h5>Triple Column</h5>
-      <div class="left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat.</p></div>
-      <div class="middle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat.</p></div>
-      <div class="right"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat.</p></div>
-    </div>
-    <div class="col-left-bar">
-      <h5>Left Bar Column</h5>
-      <div class="left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales.</p></div>
-      <div class="right"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat. Morbi lacinia, ligula sit amet commodo interdum, ligula tortor rhoncus elit, quis pretium orci nunc nec nisi. Nunc ultrices dui et.</p></div>
-    </div>
-    <div class="col-right-bar">
-      <h5>Right Bar Column</h5>
-      <div class="left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales vel orci eu consequat. Morbi lacinia, ligula sit amet commodo interdum, ligula tortor rhoncus elit, quis pretium orci nunc nec nisi. Nunc ultrices dui et.</p></div>
-      <div class="right"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris mi. Quisque sodales.</p></div>
-    </div>
-  </div></div>
-  <div class="webplate-overlay"></div>
-  <ul class="webplate-navigation">
-    <div class="navigation-inner">
-      <li>
-        <a href="#">BASIC ELEMENTS<span class="icon-angle-down"></span></a>
-        <ul>
-          <li><a href="#stripe-buttons">Buttons</a></li>
-          <li><a href="#stripe-inputs">Inputs</a></li>
-          <li><a href="#stripe-layouts">Layouts</a></li>
-          <li><a href="#stripe-lists">Lists</a></li>
-          <li><a href="#stripe-tables">Tables</a></li>
-          <li><a href="#stripe-text">Text</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">COMPONENTS<span class="icon-angle-down"></span></a>
-        <ul>
-          <li><a href="#stripe-code-reference">Code Reference</a></li>
-          <li><a href="#stripe-download-stripe">Download Stripe</a></li>
-          <li><a href="#stripe-image-hover">Image Hover</a></li>
-          <li><a href="#stripe-login-block">Login Block</a></li>
-          <li><a href="#stripe-modals">Modals</a></li>
-          <li><a href="#stripe-prettify">Prettify</a></li>
-          <li><a href="#stripe-pricing-table">Pricing Table</a></li>
-          <li><a href="#stripe-showcase">Showcase</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="../../../">GO BACK</a>
-      </li>
-    </div>
-  </ul>
-  <div class="modalplate-overlay"></div>
+
+  <p>JAVASCRIPT</p>
+
+<pre class="prettyprint linenums showcase-code">
+&lt;script&gt;
+$(document).ready(function()
+{
+    $('.flicker-example').flickerplate();
+});
+&lt;/script&gt;
+</pre>
+
+</div></div><div class="stripe"><div class="contain">
+
+  <h3>Options</h3>
+  <p>Flickerplate is configurable through a variety of ways. You can either setup the options through the Javascript call or you can set the options via data attributes on the actual element. Some options can even be set globally and on each list item.</p>
+
+  <table class="first-blue">
+    <thead>
+      <tr>
+        <th>Option</th>
+        <th>Default</th>
+        <th>JS</th>
+        <th>Data</th>
+        <th>Explanation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Arrows</td>
+        <td>true</td>
+        <td>arrows</td>
+        <td>arrows</td>
+        <td>Arrows are used to navigate back and forth between the flicks.</td>
+      </tr>
+      <tr>
+        <td>Arrows Constraint</td>
+        <td>false</td>
+        <td>arrows_constraint</td>
+        <td>arrows-constraint</td>
+        <td>When you get to the end of the flicks pressing the next arrow will navigate you to the beginning again should you have a <b>false</b> constraint. The same applies to the previous arrow.</td>
+      </tr>
+      <tr>
+        <td>Auto Flick</td>
+        <td>true</td>
+        <td>auto_flick</td>
+        <td>auto-flick</td>
+        <td>Sets the flick to run automatically. A manual flick resets the delay.</td>
+      </tr>
+      <tr>
+        <td>Auto Flick Delay</td>
+        <td>10</td>
+        <td>auto_flick_delay</td>
+        <td>auto-flick-delay</td>
+        <td>Set the delay <b>(in seconds)</b> between each auto flick.</td>
+      </tr>
+      <tr>
+        <td>Background Image</td>
+        <td></td>
+        <td></td>
+        <td>background</td>
+        <td>Set a background image for a particular list item. The image will cover the entire element and is set on a <b>list item level only</b>.</td>
+      </tr>
+      <tr>
+        <td>Block Text</td>
+        <td>true</td>
+        <td>dot_navigation</td>
+        <td>dot-navigation</td>
+        <td>Add a background colour to the text.</td>
+      </tr>
+      <tr>
+        <td>Dot Alignment</td>
+        <td>center</td>
+        <td>dot_alignment</td>
+        <td>dot-alignment</td>
+        <td>Set the horizontal alignment of the dots to either <b>left</b>, <b>center</b> or <b>right</b>.</td>
+      </tr>
+      <tr>
+        <td>Dot Navigation</td>
+        <td>true</td>
+        <td>dot_navigation</td>
+        <td>dot-navigation</td>
+        <td>Dot navigation is used to indicate and navigate between the flicks.</td>
+      </tr>
+      <tr>
+        <td>Flick Animation</td>
+        <td>transition-slide</td>
+        <td>flick_animation</td>
+        <td>flick-animation</td>
+        <td>Choose the animation type you want. Options are <b>transition-slide</b>, <b>transform-slide</b>, <b>jquery-slide</b>, <b>scroller-slide</b>, <b>transition-fade</b>, <b>jquery-fade</b>. Transform is used on mobile devices by default.</td>
+      </tr>
+      <tr>
+        <td>Flick Position</td>
+        <td>1</td>
+        <td>flick_position</td>
+        <td>flick-position</td>
+        <td>Set the starting flick.</td>
+      </tr>
+      <tr>
+        <td>Theme</td>
+        <td>light</td>
+        <td>theme</td>
+        <td>theme</td>
+        <td>Currently two options, <b>light</b> and <b>dark</b>. This will set the font colour, block text colour, arrows and dots to either dark or light. Can be applied to the containing class for a global effect or to each list item seperately.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>&nbsp;</p>
+  <p>JAVASCRIPT EXAMPLE</p>
+
+<pre class="prettyprint linenums showcase-code">
+&lt;script&gt;
+$(document).ready(function()
+{
+    $('.flicker-example').flickerplate(
+    {
+        arrows: true,
+        arrows_constraint: false,
+        auto_flick: true,
+        auto_flick_delay: 10,
+        block_text: true,
+        dot_alignment: 'center',
+        dot_navigation: true,
+        flick_animation: 'transition-slide',
+        flick_position: 1,
+        theme: 'light'
+    });
+});
+&lt;/script&gt;
+</pre>
+
+  <p>DATA ATTRIBUTE EXAMPLE</p>
+
+<pre class="prettyprint linenums showcase-code">
+&lt;div class="flicker-example" data-auto-flick-delay="6" data-dot-alignment="left" data-theme="light"&gt;
+    &lt;ul&gt;
+        &lt;li data-block-text="false"&gt;
+            &lt;div class="flick-title"&gt;Title 1&lt;/div&gt;
+            &lt;div class="flick-sub-text"&gt;Text line 1&lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li data-theme="dark"&gt;
+            &lt;div class="flick-title"&gt;Title 2&lt;/div&gt;
+            &lt;div class="flick-sub-text"&gt;Text line 2&lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li data-background="images/some-background.png"&gt;
+            &lt;div class="flick-title"&gt;Title 3&lt;/div&gt;
+            &lt;div class="flick-sub-text"&gt;Text line 3&lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+  <p>In the above example we show how you can mix options like <b>theme</b> and <b>block text</b> between a global setting and a per list item setting.</p>
+
+</div></div><div class="stripe dark footer"><div class="contain">
+
+  <h3>Copyright &amp; License Stuff</h3>
+  <h5>You can do whatever you want to with Webplate or its plugins, just mention it in your readme. Everything falls under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html" target="_blank">Apache License 2.0</a> which you can read through if you really want to.</h5>
+
+  <div>
+    <br>
+    Updates <a href="https://twitter.com/webplatetweets" target="_blank">@webplatetweets</a>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;&nbsp;Author <a href="https://twitter.com/chrishumboldt" target="_blank">@chrishumboldt</a>
+  </div>
+
+</div></div>
 </body>
