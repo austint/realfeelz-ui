@@ -2,348 +2,187 @@
 
 <body style="display: block;" data-icon-font="icomoon" data-ui="stripe" class="invert">
   <a href="#" class="navigation-trigger icon-menu small-show scroll-position"></a>
-<nav class="absolute"><div class="contain">
-
-  <ul class="navigation">
-
-      <li><a href="http://getwebplate.com#download">GET WEBPLATE</a></li>
-
-        <li><a href="http://getwebplate.com/documentation">DOCUMENTATION</a></li>
-    <li>
-      <a href="#">UI KITS<span class="icon-angle-down"></span></a>
-      <ul>
-        <li><a href="http://getwebplate.com/bower_components/webplate/project/ui/quill/example.html">Quill UI</a></li>
-        <li><a href="http://getwebplate.com/bower_components/webplate/project/ui/stripe/example.html">Stripe UI</a></li>
+  <nav class="absolute">
+    <div class="contain">
+      <ul class="navigation">
+        <li>
+          <a href="http://getwebplate.com#download">GET WEBPLATE</a>
+        </li>
+        <li>
+          <a href="http://getwebplate.com/documentation">DOCUMENTATION</a>
+        </li>
+        <li>
+          <a href="#">UI KITS<span class="icon-angle-down"></span></a>
+        </li>
+        <li>
+          <ul>
+            <li>
+              <a href="http://getwebplate.com/bower_components/webplate/project/ui/quill/example.html">Quill UI</a>
+            </li>
+            <li>
+              <a href="http://getwebplate.com/bower_components/webplate/project/ui/stripe/example.html">Stripe UI</a>
+            </li>
+          </ul>
+        </li>
+      <li>
+        <a href="#">PLUGINS</a>
+        <ul>
+          <li>
+            <a href="http://getwebplate.com/plugins/blueplate">Blueplate</a>
+          </li>
+          <li>
+            <a href="http://getwebplate.com/plugins/buttonplate">Buttonplate</a>
+          </li>
+          <li>
+            <a href="http://getwebplate.com/plugins/flickerplate">Flickerplate</a>
+          </li>
+          <li><a href="http://getwebplate.com/plugins/formplate">Formplate</a>
+          </li>
+          <li><a href="http://getwebplate.com/plugins/modalplate">Modalplate</a>
+          </li>
+          <li><a href="http://getwebplate.com/plugins/penplate">Penplate</a>
+        </li>
+        </ul>
+      </li>
       </ul>
-    </li>
-    <li>
-      <a href="#">PLUGINS<span class="icon-angle-down"></span></a>
-      <ul>
-        <li><a href="http://getwebplate.com/plugins/blueplate">Blueplate</a></li>
-        <li><a href="http://getwebplate.com/plugins/buttonplate">Buttonplate</a></li>
-        <li><a href="http://getwebplate.com/plugins/flickerplate">Flickerplate</a></li>
-        <li><a href="http://getwebplate.com/plugins/formplate">Formplate</a></li>
-        <li><a href="http://getwebplate.com/plugins/modalplate">Modalplate</a></li>
-        <li><a href="http://getwebplate.com/plugins/penplate">Penplate</a></li>
-      </ul>
-    </li>
-  </ul>
+      <div class="logo-container">
+        <a href="http://getwebplate.com" class="logo-line">WEBPLATE</a>
+      </div>
+    </div>
+  </nav>
 
-  <div class="logo-container"><a href="http://getwebplate.com" class="logo-line">WEBPLATE</a></div>
+  <header class="stripe full">
+    <div class="contain">
+    {{#link-to 'flickerplate'}}<a class="scroll-down icon-angle-down"></a>{{/link-to}}
+    </div>
 
-</div></nav>
-<header class="stripe full" style="height: 923px;">
+    <!-- Flicker -->
+    <div class="flickerplate">
+      <div class="slideshow bg-image animate-transform-slide flicker-theme-light">
+        <div class="arrow-navigation left"></div>
+        <div class="arrow-navigation right"></div>
+        <ul class="flicks">
+          <li data-background="https://ununsplash.imgix.net/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?q=75&fm=jpg&s=2857080adb1de5db2cbddb6d230954bc">
+            <div class="flick-inner">
+              <div class="flick-content">
+                <div class="flick-title">{{#link-to 'index'}}RealFeelz{{/link-to}}</div>
+                <div class="flick-title">What's Real For You Right Now?</div>
+              </div>
+            </div>
+          </li>
+          <li data-background="https://unsplash.imgix.net/reserve/wVlfnlTbRtK8eGvbnBZI_VolkanOlmez_005.jpg?q=75&fm=jpg&s=de70d125f08a3fbb40d6b9984af5c3ad">
+            <div class="flick-inner">
+              <div class="flick-content">
+                <div class="flick-title">{{#link-to 'index'}}Confession{{/link-to}}</div>
+              </div>
+            </div>
+          </li>
+          <li data-background="https://unsplash.imgix.net/uploads/14116941824817ba1f28e/78c8dff1?q=75&fm=jpg&s=eed337dca5e9e4ca8b8d23513e6b9bf6">
+            <div class="flick-inner">
+              <div class="flick-content">
+                <div class="flick-title">{{#link-to 'index'}}Truth{{/link-to}}</div>
+              </div>
+            </div>
+          </li>
+          <li data-background="https://ununsplash.imgix.net/44/C3EWdWzT8imxs0fKeKoC_blackforrest.JPG?q=75&fm=jpg&s=871d9503e2cbec376305a97d64ff3b23">
+            <div class="flick-inner">
+              <div class="flick-content">
+                <div class="flick-title">{{#link-to 'index'}}Awareness{{/link-to}}</div>
+              </div>
+            </div>
+          </li>
+          <li data-background="https://unsplash.imgix.net/reserve/tlC8KhNJR0CA2xdomLfx_DSC_0358-2.jpg?q=75&fm=jpg&s=c5c66c8958c2c6ddced808e608302fe7">
+            <div class="flick-inner">
+              <div class="flick-content">
+                <div class="flick-title">{{#link-to 'index'}}Connection{{/link-to}}</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-  <span class="web-developer-id-class-details">.contain</span><div class="contain">
-
-    <span class="web-developer-id-class-details">.scroll-down.icon-angle-down</span>{{#link-to 'flickerplate'}}<a class="scroll-down icon-angle-down" style="margin-top: 823px;"></a>{{/link-to}}
-
-  </div>
-
-  <!-- Flicker -->
-  <div class="flickerplate">
-    <div class="slideshow bg-image animate-transform-slide flicker-theme-light">
-      <div class="arrow-navigation left"></div>
-      <div class="arrow-navigation right"></div>
-      <ul class="flicks">
-        <li data-background="https://ununsplash.imgix.net/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?q=75&fm=jpg&s=2857080adb1de5db2cbddb6d230954bc">
-          <div class="flick-inner">
-            <div class="flick-content">
-              <div class="flick-title">{{#link-to 'index'}}RealFeelz{{/link-to}}</div>
-              <div class="flick-title">What's Real For You Right Now?</div>
+  </header>
+  {{!-- <div id="sticky_item"> --}}
+    <div class="section-hero section-bg-color1">
+      <div class="row">
+        <div class="small-12 medium-10 large-10 small-centered columns">
+          <div class="download-box dlb-form">
+            <div id="mc_embed_signup">
+              <form {{action "postStatement" newPost on="submit" }}>
+                {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
+                <div id="recaptcha"></div>
+                <div class="status-text">
+                  {{#if verifyingCaptcha}}
+                  <p>Verifying Captcha...</p>
+                  {{/if}} {{#if showingCaptcha}}
+                  <p>Getting a Captcha...</p>
+                  {{/if}} {{#if captchaVerified }}
+                  <p>Now that we know you are a human, hit post again to share.</p>
+                  {{/if}} {{#if tryAgain}}
+                  <p>Try again...</p>
+                  {{/if}}
+                </div>
+                <button class="button radius" type="submit">Post</button>
+              </form>
             </div>
           </div>
-        </li>
-        <li data-background="https://unsplash.imgix.net/reserve/wVlfnlTbRtK8eGvbnBZI_VolkanOlmez_005.jpg?q=75&fm=jpg&s=de70d125f08a3fbb40d6b9984af5c3ad">
-          <div class="flick-inner">
-            <div class="flick-content">
-              <div class="flick-title">{{#link-to 'index'}}Confession{{/link-to}}</div>
-            </div>
-          </div>
-        </li>
-        <li data-background="https://unsplash.imgix.net/uploads/14116941824817ba1f28e/78c8dff1?q=75&fm=jpg&s=eed337dca5e9e4ca8b8d23513e6b9bf6">
-          <div class="flick-inner">
-            <div class="flick-content">
-              <div class="flick-title">{{#link-to 'index'}}Truth{{/link-to}}</div>
-            </div>
-          </div>
-        </li>
-        <li data-background="https://ununsplash.imgix.net/44/C3EWdWzT8imxs0fKeKoC_blackforrest.JPG?q=75&fm=jpg&s=871d9503e2cbec376305a97d64ff3b23">
-          <div class="flick-inner">
-            <div class="flick-content">
-              <div class="flick-title">{{#link-to 'index'}}Awareness{{/link-to}}</div>
-            </div>
-          </div>
-        </li>
-        <li data-background="https://unsplash.imgix.net/reserve/tlC8KhNJR0CA2xdomLfx_DSC_0358-2.jpg?q=75&fm=jpg&s=c5c66c8958c2c6ddced808e608302fe7">
-          <div class="flick-inner">
-            <div class="flick-content">
-              <div class="flick-title">{{#link-to 'index'}}Connection{{/link-to}}</div>
-            </div>
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div>
+    </div>
+  {{!-- </div> --}}
+
+  <div class="section-hero section-bg-color1">
+    <div class="row">
+      <div class="small-12 medium-10 large-10 small-centered columns">
+        <div class="download-box">
+          <ul>
+            {{#each}}
+            <p class="truths">{{body}}</p>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 
-{{!--  <div class="flickerplate bg-image animate-transform-slide flicker-theme-light" data-auto-flick="true" data-dot-navigation="false" data-block-text="false" data-auto-flick-delay="6" data-flick-position="3" style="-webkit-transform: translate3d(0px, 24.6666666666667px, 0px); transform: translate3d(0px, 24.6666666666667px, 0px);"><span class="web-developer-id-class-details">.arrow-navigation.left</span><div class="arrow-navigation left"></div><span class="web-developer-id-class-details">.arrow-navigation.right</span><div class="arrow-navigation right"></div>
+  <footer class="section-bg-color2">
+    <div class="row">
+      <div class="small-12 medium-12 large-12 columns">
+        <ul>
+          <li>&copy;2014 {{#link-to 'flickerplate'}}RealFeelz{{/link-to}}</li>
+          <li>{{#link-to 'flickerplate'}}About{{/link-to}}</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
-    <span class="web-developer-id-class-details">.flicks</span><ul class="flicks" style="-webkit-transform:translate3d(-2%, 0, 0);-o-transform:translate3d(-2%, 0, 0);-moz-transform:translate3d(-2%, 0, 0);transform:translate3d(-2%, 0, 0)">
 
-      <li data-background="http://getwebplate.com/bower_components/webplate/project/img/flicks/mist.jpg" style="background-image: url(http://getwebplate.com/bower_components/webplate/project/img/flicks/mist.jpg);"><span class="web-developer-id-class-details">.flick-inner</span><div class="flick-inner"><span class="web-developer-id-class-details">.flick-content</span><div class="flick-content">
-
-        <span class="web-developer-id-class-details">.flick-title</span><div class="flick-title">A cool jQuery plugin that lets you flick through content</div>
-
-      </div></div></li>
-      <li data-background="http://getwebplate.com/bower_components/webplate/project/img/flicks/forest.jpg" style="background-image: url(http://getwebplate.com/bower_components/webplate/project/img/flicks/forest.jpg);"><span class="web-developer-id-class-details">.flick-inner</span><div class="flick-inner"><span class="web-developer-id-class-details">.flick-content</span><div class="flick-content">
-
-        <span class="web-developer-id-class-details">.flick-title</span><div class="flick-title">So simple to use, fully responsive and touch enabled</div>
-
-      </div></div></li>
-      <li data-background="http://getwebplate.com/bower_components/webplate/project/img/flicks/mountain-misty.jpg" style="background-image: url(http://getwebplate.com/bower_components/webplate/project/img/flicks/mountain-misty.jpg);"><span class="web-developer-id-class-details">.flick-inner</span><div class="flick-inner"><span class="web-developer-id-class-details">.flick-content</span><div class="flick-content">
-
-        <span class="web-developer-id-class-details">.flick-title</span><div class="flick-title">Hard to believe that it's only 14kb in size</div>
-
-      </div></div></li>
-
-    </ul>
-
-  </div> --}}
-
-{{!-- </header> --}}
-
-<div  class="stripe download-stripe"><div class="contain">
-
-  <h3>Get the Plugin</h3>
-  <h5>You can download Flickerplate as a zip file directly or for the latest version get it via Github. Note that this plugin is included within Webplate by default.</h5>
-
-  <div class="left">
-    <a href="https://github.com/chrishumboldt/Flickerplate/archive/master.zip" class="btn-download"><span class="icon-inbox"></span>Flickerplate.zip</a>
+  {{!-- <div class="stripe download-stripe">
+    <div class="contain">
+      <h3>Get the Plugin</h3>
+      <h5>You can download Flickerplate as a zip file directly or for the latest version get it via Github. Note that this plugin is included within Webplate by default.</h5>
+      <div class="left">
+        <a href="https://github.com/chrishumboldt/Flickerplate/archive/master.zip" class="btn-download"></a>
+      </div>
+      <div class="right">
+        <a href="https://github.com/chrishumboldt/Flickerplate" class="btn-link">Get via Github</a>
+      </div>
+    </div>
   </div>
-
-  <div class="right">
-    <a href="https://github.com/chrishumboldt/Flickerplate" class="btn-link"><span class="icon-github"></span>Get via Github</a>
-  </div>
-
-</div></div><div class="stripe"><div class="contain">
-
-  <h3>Bower Install</h3>
-
+  <div class="stripe">
+    <div class="contain">
+      <h3>Bower Install</h3>
       <p>This plugin has been registered on <a href="http://bower.io/" target="_blank">Bower</a> and will install the latest stable release. You can do so by running the following command.</p>
-
-
-<pre class="prettyprint linenums showcase-code">
-bower install flickerplate</pre>
-
-
-</div></div><div class="stripe"><div class="contain">
-
-  <h3>Getting Started</h3>
-  <p>This plugin is by definition a <a href="http://jquery.com/">jQuery</a> plugin and so is required. It also requires <a href="http://modernizr.com/">Modernizr</a> for touch detection and the <a href="http://hammerjs.github.io/">Hammer.js</a> library for touch events. Both jQuery and a custom build of Modernizr are supplied in the zip package.</p>
-  <p>See an example below of a basic include.</p>
-
-<pre class="prettyprint linenums showcase-code">
-&lt;head&gt;
-    // Required javascript
-    &lt;script src=&quot;js/min/jquery-v1.10.2.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;js/min/modernizr-custom-v2.7.1.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;js/min/hammer-v2.0.3.min.js&quot;&gt;&lt;/script&gt;
-
-    // Flickerplate
-    &lt;script src=&quot;js/min/flickerplate.min.js&quot;&gt;&lt;/script&gt;
-    &lt;link href=&quot;css/flickerplate.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
-&lt;/head&gt;
-</pre>
-
-</div></div><div class="stripe"><div class="contain">
-
-  <h3>Executing Flickerplate</h3>
-  <p>The plugin is executed via <b>Javascript</b> and can be called on any containing class as long as the inner HTML is correct. See an example of both below.</p>
-
-  <p>HTML</p>
-
-<pre class="prettyprint linenums showcase-code">
-&lt;div class="flicker-example"&gt;
-    &lt;ul&gt;
-        &lt;li&gt;
-            &lt;div class="flick-title"&gt;Title 1&lt;/div&gt;
-            &lt;div class="flick-sub-text"&gt;Text line 1&lt;/div&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;div class="flick-title"&gt;Title 2&lt;/div&gt;
-            &lt;div class="flick-sub-text"&gt;Text line 2&lt;/div&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;div class="flick-title"&gt;Title 3&lt;/div&gt;
-            &lt;div class="flick-sub-text"&gt;Text line 3&lt;/div&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;
-</pre>
-
-  <p>JAVASCRIPT</p>
-
-<pre class="prettyprint linenums showcase-code">
-&lt;script&gt;
-$(document).ready(function()
-{
-    $('.flicker-example').flickerplate();
-});
-&lt;/script&gt;
-</pre>
-
-</div></div><div class="stripe"><div class="contain">
-
-  <h3>Options</h3>
-  <p>Flickerplate is configurable through a variety of ways. You can either setup the options through the Javascript call or you can set the options via data attributes on the actual element. Some options can even be set globally and on each list item.</p>
-
-  <table class="first-blue">
-    <thead>
-      <tr>
-        <th>Option</th>
-        <th>Default</th>
-        <th>JS</th>
-        <th>Data</th>
-        <th>Explanation</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Arrows</td>
-        <td>true</td>
-        <td>arrows</td>
-        <td>arrows</td>
-        <td>Arrows are used to navigate back and forth between the flicks.</td>
-      </tr>
-      <tr>
-        <td>Arrows Constraint</td>
-        <td>false</td>
-        <td>arrows_constraint</td>
-        <td>arrows-constraint</td>
-        <td>When you get to the end of the flicks pressing the next arrow will navigate you to the beginning again should you have a <b>false</b> constraint. The same applies to the previous arrow.</td>
-      </tr>
-      <tr>
-        <td>Auto Flick</td>
-        <td>true</td>
-        <td>auto_flick</td>
-        <td>auto-flick</td>
-        <td>Sets the flick to run automatically. A manual flick resets the delay.</td>
-      </tr>
-      <tr>
-        <td>Auto Flick Delay</td>
-        <td>10</td>
-        <td>auto_flick_delay</td>
-        <td>auto-flick-delay</td>
-        <td>Set the delay <b>(in seconds)</b> between each auto flick.</td>
-      </tr>
-      <tr>
-        <td>Background Image</td>
-        <td></td>
-        <td></td>
-        <td>background</td>
-        <td>Set a background image for a particular list item. The image will cover the entire element and is set on a <b>list item level only</b>.</td>
-      </tr>
-      <tr>
-        <td>Block Text</td>
-        <td>true</td>
-        <td>dot_navigation</td>
-        <td>dot-navigation</td>
-        <td>Add a background colour to the text.</td>
-      </tr>
-      <tr>
-        <td>Dot Alignment</td>
-        <td>center</td>
-        <td>dot_alignment</td>
-        <td>dot-alignment</td>
-        <td>Set the horizontal alignment of the dots to either <b>left</b>, <b>center</b> or <b>right</b>.</td>
-      </tr>
-      <tr>
-        <td>Dot Navigation</td>
-        <td>true</td>
-        <td>dot_navigation</td>
-        <td>dot-navigation</td>
-        <td>Dot navigation is used to indicate and navigate between the flicks.</td>
-      </tr>
-      <tr>
-        <td>Flick Animation</td>
-        <td>transition-slide</td>
-        <td>flick_animation</td>
-        <td>flick-animation</td>
-        <td>Choose the animation type you want. Options are <b>transition-slide</b>, <b>transform-slide</b>, <b>jquery-slide</b>, <b>scroller-slide</b>, <b>transition-fade</b>, <b>jquery-fade</b>. Transform is used on mobile devices by default.</td>
-      </tr>
-      <tr>
-        <td>Flick Position</td>
-        <td>1</td>
-        <td>flick_position</td>
-        <td>flick-position</td>
-        <td>Set the starting flick.</td>
-      </tr>
-      <tr>
-        <td>Theme</td>
-        <td>light</td>
-        <td>theme</td>
-        <td>theme</td>
-        <td>Currently two options, <b>light</b> and <b>dark</b>. This will set the font colour, block text colour, arrows and dots to either dark or light. Can be applied to the containing class for a global effect or to each list item seperately.</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <p>&nbsp;</p>
-  <p>JAVASCRIPT EXAMPLE</p>
-
-<pre class="prettyprint linenums showcase-code">
-&lt;script&gt;
-$(document).ready(function()
-{
-    $('.flicker-example').flickerplate(
-    {
-        arrows: true,
-        arrows_constraint: false,
-        auto_flick: true,
-        auto_flick_delay: 10,
-        block_text: true,
-        dot_alignment: 'center',
-        dot_navigation: true,
-        flick_animation: 'transition-slide',
-        flick_position: 1,
-        theme: 'light'
-    });
-});
-&lt;/script&gt;
-</pre>
-
-  <p>DATA ATTRIBUTE EXAMPLE</p>
-
-<pre class="prettyprint linenums showcase-code">
-&lt;div class="flicker-example" data-auto-flick-delay="6" data-dot-alignment="left" data-theme="light"&gt;
-    &lt;ul&gt;
-        &lt;li data-block-text="false"&gt;
-            &lt;div class="flick-title"&gt;Title 1&lt;/div&gt;
-            &lt;div class="flick-sub-text"&gt;Text line 1&lt;/div&gt;
-        &lt;/li&gt;
-        &lt;li data-theme="dark"&gt;
-            &lt;div class="flick-title"&gt;Title 2&lt;/div&gt;
-            &lt;div class="flick-sub-text"&gt;Text line 2&lt;/div&gt;
-        &lt;/li&gt;
-        &lt;li data-background="images/some-background.png"&gt;
-            &lt;div class="flick-title"&gt;Title 3&lt;/div&gt;
-            &lt;div class="flick-sub-text"&gt;Text line 3&lt;/div&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;
-</pre>
-
-  <p>In the above example we show how you can mix options like <b>theme</b> and <b>block text</b> between a global setting and a per list item setting.</p>
-
-</div></div><div class="stripe dark footer"><div class="contain">
-
-  <h3>Copyright &amp; License Stuff</h3>
-  <h5>You can do whatever you want to with Webplate or its plugins, just mention it in your readme. Everything falls under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html" target="_blank">Apache License 2.0</a> which you can read through if you really want to.</h5>
-
-  <div>
-    <br>
-    Updates <a href="https://twitter.com/webplatetweets" target="_blank">@webplatetweets</a>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;&nbsp;Author <a href="https://twitter.com/chrishumboldt" target="_blank">@chrishumboldt</a>
+    </div>
+  </div> --}}
+  <div class="stripe dark footer">
+    <div class="contain">
+      <h3>Copyright &amp; License Stuff</h3>
+      <h5>You can do whatever you want to with Webplate or its plugins, just mention it in your readme. Everything falls under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html" target="_blank">Apache License 2.0</a> which you can read through if you really want to.</h5>
+      <div>
+      <br>
+      </div>
+    </div>
   </div>
-
-</div></div>
 </body>
