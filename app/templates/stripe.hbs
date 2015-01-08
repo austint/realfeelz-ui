@@ -1,3 +1,4 @@
+{{view 'stickykit-view'}}
 {{view 'flickerplate-view'}}
 
 <body style="display: block;" data-icon-font="icomoon" data-ui="stripe" class="invert">
@@ -52,15 +53,10 @@
   </nav>
 
   <header class="stripe full">
-    <div class="contain">
-    {{#link-to 'flickerplate'}}<a class="scroll-down icon-angle-down"></a>{{/link-to}}
-    </div>
-
-    <!-- Flicker -->
     <div class="flickerplate">
-      <div class="slideshow bg-image animate-transform-slide flicker-theme-light">
-        <div class="arrow-navigation left"></div>
-        <div class="arrow-navigation right"></div>
+      <div class="slideshow bg-image">
+{{!--         <div class="arrow-navigation left"></div>
+        <div class="arrow-navigation right"></div> --}}
         <ul class="flicks">
           <li data-background="https://ununsplash.imgix.net/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?q=75&fm=jpg&s=2857080adb1de5db2cbddb6d230954bc">
             <div class="flick-inner">
@@ -99,90 +95,72 @@
             </div>
           </li>
         </ul>
-      </div>
-    </div>
+{{!--       </div>
+    </div> --}}
+</header>
 
-  </header>
-  {{!-- <div id="sticky_item"> --}}
-    <div class="section-hero section-bg-color1">
-      <div class="row">
-        <div class="small-12 medium-10 large-10 small-centered columns">
-          <div class="download-box dlb-form">
-            <div id="mc_embed_signup">
-              <form {{action "postStatement" newPost on="submit" }}>
-                {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
-                <div id="recaptcha"></div>
-                <div class="status-text">
-                  {{#if verifyingCaptcha}}
-                  <p>Verifying Captcha...</p>
-                  {{/if}} {{#if showingCaptcha}}
-                  <p>Getting a Captcha...</p>
-                  {{/if}} {{#if captchaVerified }}
-                  <p>Now that we know you are a human, hit post again to share.</p>
-                  {{/if}} {{#if tryAgain}}
-                  <p>Try again...</p>
-                  {{/if}}
-                </div>
-                <button class="button radius" type="submit">Post</button>
-              </form>
-            </div>
+<div class="group">
+  <div id="sticky_item">
+    <div class="truths-submit">
+      <div class="container">
+        <div class="row">
+          <div class="ten columns offset-by-one textarea">
+            <form {{action "postStatement" newPost on="submit" }}>
+              {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
+              <div id="recaptcha"></div>
+              <div class="status-text">
+                {{#if verifyingCaptcha}}
+                <p>Verifying Captcha...</p>
+                {{/if}} {{#if showingCaptcha}}
+                <p>Getting a Captcha...</p>
+                {{/if}} {{#if captchaVerified }}
+                <p>Now that we know you are a human, hit post again to share.</p>
+                {{/if}} {{#if tryAgain}}
+                <p>Try again...</p>
+                {{/if}}
+              </div>
+              <button class="button radius" type="submit">Post</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-  {{!-- </div> --}}
+  </div>
 
-  <div class="section-hero section-bg-color1">
-    <div class="row">
-      <div class="small-12 medium-10 large-10 small-centered columns">
-        <div class="download-box">
+  <div class="truths-list">
+    <div class="container">
+      <div class="row">
+        <div class="ten columns offset-by-one">
+            <ul>
+              {{#each}}
+              <p class="truths">{{body}}</p>
+              {{/each}}
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns offset-by-one">
           <ul>
-            {{#each}}
-            <p class="truths">{{body}}</p>
-            {{/each}}
+            <li>&copy;2014 {{#link-to 'flickerplate'}}RealFeelz{{/link-to}}</li>
+            <li>{{#link-to 'flickerplate'}}About{{/link-to}}</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 
-  <footer class="section-bg-color2">
-    <div class="row">
-      <div class="small-12 medium-12 large-12 columns">
-        <ul>
-          <li>&copy;2014 {{#link-to 'flickerplate'}}RealFeelz{{/link-to}}</li>
-          <li>{{#link-to 'flickerplate'}}About{{/link-to}}</li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-
-
-  {{!-- <div class="stripe download-stripe">
-    <div class="contain">
-      <h3>Get the Plugin</h3>
-      <h5>You can download Flickerplate as a zip file directly or for the latest version get it via Github. Note that this plugin is included within Webplate by default.</h5>
-      <div class="left">
-        <a href="https://github.com/chrishumboldt/Flickerplate/archive/master.zip" class="btn-download"></a>
-      </div>
-      <div class="right">
-        <a href="https://github.com/chrishumboldt/Flickerplate" class="btn-link">Get via Github</a>
-      </div>
-    </div>
-  </div>
-  <div class="stripe">
-    <div class="contain">
-      <h3>Bower Install</h3>
-      <p>This plugin has been registered on <a href="http://bower.io/" target="_blank">Bower</a> and will install the latest stable release. You can do so by running the following command.</p>
-    </div>
-  </div> --}}
   <div class="stripe dark footer">
-    <div class="contain">
-      <h3>Copyright &amp; License Stuff</h3>
-      <h5>You can do whatever you want to with Webplate or its plugins, just mention it in your readme. Everything falls under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html" target="_blank">Apache License 2.0</a> which you can read through if you really want to.</h5>
-      <div>
+    <div class="container">
+      <div class="row">
       <br>
       </div>
     </div>
   </div>
+
 </body>
