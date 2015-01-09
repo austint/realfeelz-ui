@@ -4,9 +4,13 @@
 // @import 'bower_components/webplate/core/sass/import.scss';
 // @import 'bower_components/foundation/scss/foundation';
 //
-html {
-  background-color: #D3D3D3;
+// html {
+//   background-color: #D3D3D3;
+//
+.full {
+  background: #3e424d !important;
 }
+
 textarea {
   margin-bottom: 22px !important;
 }
