@@ -1,16 +1,41 @@
 // @import 'bower_components/foundation/scss/normalize';
+// @import 'bower_components/foundation/scss/foundation';
 @import 'bower_components/webplate/core/sass/blueplate/_import.scss';
 @import 'bower_components/webplate/core/sass/flickerplate/_import.scss';
 // @import 'bower_components/webplate/core/sass/import.scss';
-// @import 'bower_components/foundation/scss/foundation';
-//
+
 // html {
 //   background-color: #D3D3D3;
 //
 // .full {
 //   background: #3e424d !important;
 // }
-
+//
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
+// #bg {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+// }
+// .bgwidth {
+//   width: 100%;
+// }
+// .bgheight {
+//   height: 100%;
+// }
+// #page-wrap {
+//   position: relative;
+//   width: 400px;
+//   margin: 50px auto;
+//   padding: 20px;
+//   background: white;
+//   -moz-box-shadow: 0 0 20px black;
+//   -webkit-box-shadow: 0 0 20px black;
+//   box-shadow: 0 0 20px black;
+// }
 textarea {
   margin-bottom: 22px !important;
 }
@@ -47,7 +72,6 @@ h5 {
   font-size: 11px;
   font-weight: 600;
 }
-
 // .ember-text-area {
 //   // display: inline-block;
 //   // background-color: transparent;
@@ -55,8 +79,8 @@ h5 {
 //   border-radius: 2px;
 //   color: white;
 //   text-align: center;
-  // font-size: 11px;
-  // font-weight: 600;
+// font-size: 11px;
+// font-weight: 600;
 //   text-decoration: none;
 //   // cursor: pointer;
 //   border: 2px solid #000000;
@@ -69,20 +93,22 @@ h5 {
 //   // box-sizing: border-box;
 // }
 .flickerplate {
-  // height: 100%;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   -moz-box-shadow: 0 0 5px black;
   -webkit-box-shadow: 0 0 5px black;
   box-shadow: 0 0 5px black;
+  border: 2px solid #000000;
 }
 .stripe.full {
   padding: 10px;
+  // margin-bottom: 75px;
 }
 ul {
-  margin: 0px !important;
+  // margin: 0px !important;
 }
 #sticky_item {
   z-index: 2 !important;

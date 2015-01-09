@@ -1,10 +1,13 @@
 {{view 'stickykit-view'}}
 {{view 'flickerplate-view'}}
+{{!-- {{view 'magellan-view'}} --}}
+{{!-- {{view 'fullbackground-view'}} --}}
 
 {{!-- https://unsplash.imgix.net/reserve/wVlfnlTbRtK8eGvbnBZI_VolkanOlmez_005.jpg?q=75&fm=jpg&s=de70d125f08a3fbb40d6b9984af5c3ad --}}
 
 <body style="display: block;" data-icon-font="icomoon" data-ui="stripe" class="invert">
   {{!-- <a href="#" class="navigation-trigger icon-menu small-show scroll-position"></a> --}}
+  <div id="unstick">
   <nav class="absolute">
     <div class="contain">
       <div class="logo-container">
@@ -12,7 +15,8 @@
       </div>
     </div>
   </nav>
-
+  </div>
+<div id="unstick">
   <header class="stripe full">
     <div class="flickerplate">
       <div class="slideshow bg-image">
@@ -61,6 +65,10 @@
       </div>
     </div>
   </header>
+</div>
+  {{!-- <img src="images/bg.jpg" id="bg" alt=""> --}}
+
+  {{!-- <div id="page-wrap"> --}}
 
   <div id="sticky_item">
     <div class="container form-post">
@@ -92,7 +100,7 @@
       <div class="ten columns offset-by-one of-truths">
         <ul>
           {{#each}}
-          <h5 class="truths">{{body}}</h5>
+          <h6 class="truths">{{body}}</h6>
           {{/each}}
         </ul>
       </div>
@@ -112,14 +120,6 @@
     </div>
   </div>
 
-  <div class="stripe dark footer">
-    <div class="container">
-      <div class="row">
-        <div class="twelve columns offset-by-one">
-        <br>
-        </div>
-      </div>
-    </div>
-  </div>
+  {{!-- </div> --}}
 
 </body>
