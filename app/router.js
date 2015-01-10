@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('willamette');
   this.route('flickerplate');
   this.route('stripe');
+  this.route('new');
 });
 
 export default Router;

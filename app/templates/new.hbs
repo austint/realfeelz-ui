@@ -1,0 +1,193 @@
+<div class="top-border"></div>
+<div id="container">
+<div class="row">
+  <div class="large-4 columns" id="sidebar">
+    <header>
+      <h1>RealFeelz</h1>
+      <h2>What's Real For You</h2>
+    </header>
+    <form {{action "postStatement" newPost on="submit" }}>
+      {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
+      <div id="recaptcha"></div>
+      <div class="status-text">
+        {{#if verifyingCaptcha}}
+        <p>Verifying Captcha...</p>
+        {{/if}} {{#if showingCaptcha}}
+        <p>Getting a Captcha...</p>
+        {{/if}} {{#if captchaVerified }}
+        <p>Now that we know you are a human, hit post again to share.</p>
+        {{/if}} {{#if tryAgain}}
+        <p>Try again...</p>
+        {{/if}}
+      </div>
+      <button class="button radius" type="submit">Post</button>
+    </form>
+  </div>
+
+  <div class="large-8 columns" id="content">
+    {{!--
+    <div class="small-12 medium-10 large-10 columns"> --}}
+      <ul>
+        {{#each}}
+        <h4 class="truths">{{body}}</h4>{{/each}}
+      </ul>
+      {{!-- </div> --}}
+  </div>
+</div>
+
+
+
+{{!-- <div class="top-border"></div>
+
+<div class="row">
+  <div class="small-12 medium-12 large-12 small-centered columns">
+    <header>
+      <h1><a href="index.html">Hawthorne Template</a></h1>
+      <h2><a href="index.html">Design & Art Direction</a></h2>
+      <!--
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.png" alt="Your Name Here" /></a>
+      </div>
+      -->
+    </header>
+  </div>
+  <div class="small-12 medium-12 large-12 small-centered columns">
+    <nav>
+      <ul class="inline-list-custom">
+        <li><a href="index.html" class="current">Selected Work</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 medium-12 large-12 columns">
+    <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3 inline-list-custom">
+
+      <!-- Begin project -->
+      <li>
+        <div class="thumbnail">
+          <div class="thumbnail-img">
+            <div class="thumbnail-hover"><a href="project-01.html"></a></div>
+            <a href="project-01.html"><img src="img/projects/project-01.png" alt="Project 01" /></a>
+          </div>
+          <div class="thumbnail-caption"><a class="caption-link" href="project-01.html">Project 01</a></div>
+        </div>
+      </li>
+      <!-- End project -->
+
+      <!-- Begin project -->
+      <li>
+        <div class="thumbnail">
+          <div class="thumbnail-img">
+            <div class="thumbnail-hover"><a href="project-01.html"></a></div>
+            <a href="project-01.html"><img src="img/projects/project-02.png" alt="Project 02" /></a>
+          </div>
+          <div class="thumbnail-caption"><a class="caption-link" href="project-01.html">Project 02</a></div>
+        </div>
+      </li>
+      <!-- End project -->
+
+      <!-- Begin project -->
+      <li>
+        <div class="thumbnail">
+          <div class="thumbnail-img">
+            <div class="thumbnail-hover"><a href="project-01.html"></a></div>
+            <a href="project-01.html"><img src="img/projects/project-03.png" alt="Project 03" /></a>
+          </div>
+          <div class="thumbnail-caption"><a class="caption-link" href="project-01.html">Project 03</a></div>
+        </div>
+      </li>
+      <!-- End project -->
+
+      <!-- Begin project -->
+      <li>
+        <div class="thumbnail">
+          <div class="thumbnail-img">
+            <div class="thumbnail-hover"><a href="project-01.html"></a></div>
+            <a href="project-01.html"><img src="img/projects/project-04.png" alt="Project 04" /></a>
+          </div>
+          <div class="thumbnail-caption"><a class="caption-link" href="project-01.html">Project 04</a></div>
+        </div>
+      </li>
+      <!-- End project -->
+
+      <!-- Begin project -->
+      <li>
+        <div class="thumbnail">
+          <div class="thumbnail-img">
+            <div class="thumbnail-hover"><a href="project-01.html"></a></div>
+            <a href="project-01.html"><img src="img/projects/project-05.png" alt="Project 05" /></a>
+          </div>
+          <div class="thumbnail-caption"><a class="caption-link" href="project-01.html">Project 05</a></div>
+        </div>
+      </li>
+      <!-- End project -->
+
+      <!-- Begin project -->
+      <li>
+        <div class="thumbnail">
+          <div class="thumbnail-img">
+            <div class="thumbnail-hover"><a href="project-01.html"></a></div>
+            <a href="project-01.html"><img src="img/projects/project-06.png" alt="Project 06" /></a>
+          </div>
+          <div class="thumbnail-caption"><a class="caption-link" href="project-01.html">Project 06</a></div>
+        </div>
+      </li>
+      <!-- End project -->
+
+      <!-- Begin project -->
+      <li>
+        <div class="thumbnail">
+          <div class="thumbnail-img">
+            <div class="thumbnail-hover"><a href="project-01.html"></a></div>
+            <a href="project-01.html"><img src="img/projects/project-07.png" alt="Project 07" /></a>
+          </div>
+          <div class="thumbnail-caption"><a class="caption-link" href="project-01.html">Project 07</a></div>
+        </div>
+      </li>
+      <!-- End project -->
+
+      <!-- Begin project -->
+      <li>
+        <div class="thumbnail">
+          <div class="thumbnail-img">
+            <div class="thumbnail-hover"><a href="project-01.html"></a></div>
+            <a href="project-01.html"><img src="img/projects/project-08.png" alt="Project 08" /></a>
+          </div>
+          <div class="thumbnail-caption"><a class="caption-link" href="project-01.html">Project 08</a></div>
+        </div>
+      </li>
+      <!-- End project -->
+
+      <!-- Begin project -->
+      <li>
+        <div class="thumbnail">
+          <div class="thumbnail-img">
+            <div class="thumbnail-hover"><a href="project-01.html"></a></div>
+            <a href="project-01.html"><img src="img/projects/project-09.png" alt="Project 09" /></a>
+          </div>
+          <div class="thumbnail-caption"><a class="caption-link" href="project-01.html">Project 09</a></div>
+        </div>
+      </li>
+      <!-- End project -->
+
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 medium-12 large-12 columns">
+    <footer>
+      <ul>
+        <li>&copy; 2014 <a href="index.html">Your Name Here</a>. All rights reserved.</li>
+        <li><a href="mailto:hello@yourname.com"><i class="fa fa-envelope-o"></i> hello@yourname.com</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="http://www.twitter.com/typeandgrids" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+        <a href="http://www.facebook.com/typeandgrids" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+      </div>
+    </footer>
+  </div>
+</div> --}}
