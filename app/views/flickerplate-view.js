@@ -4,7 +4,7 @@ export default Ember.View.extend({
   didInsertElement: function() {
     Ember.$(document).ready(function() {
       Ember.$('.flickerplate').flickerplate({
-        auto_flick: true,
+        auto_flick: false,
         flick_animation: 'transform-slide',
         dot_navigation: false
       });
