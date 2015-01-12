@@ -1,4 +1,61 @@
-<div class="parallax-background">
+  <div class="grid-frame">
+  <div class="medium-grid-block collapse medium-2 large-3 vertical">
+  </div>
+    <div class="grid-block medium-8 large-6 vertical">
+      <div id="header" class="shrink collapse grid-content">
+        <ul class="menu-bar primary">
+          <li class="hide-for-medium"><a zf-open="sidebar" href="#">Menu</a>
+          </li>
+          <li><a href="#">Link 1</a>
+          </li>
+          <li><a href="#">Link 2</a>
+          </li>
+          <li><a href="#">Link 3</a>
+          </li>
+        </ul>
+      </div>
+      <div class="grid-block">
+        <div class="grid-block small-12 medium-12 vertical">
+          <div class="message-input grid-content collapse shrink">
+            <span class="inline-label">
+              <input type="text" placeholder="Message">
+              <a href="#" class="button">Send</a>
+            </span>
+          </div>
+          <div class="grid-content">
+            <h4><img src="http://placehold.it/30x30"> Cady Heron</h4>
+            <p>Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue.</p>
+            <hr />
+            <h4><img src="http://placehold.it/30x30"> Kevin Gnapoor</h4>
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat.</p>
+            <hr />
+            <h4><img src="http://placehold.it/30x30"> Cady Heron</h4>
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat.</p>
+            <hr />
+            <h4><img src="http://placehold.it/30x30"> Trang Pak</h4>
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat.</p>
+            <hr />
+            <h4><img src="http://placehold.it/30x30"> Coach Carr</h4>
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat.</p>
+            <hr />
+            <h4><img src="http://placehold.it/30x30"> Cady Heron</h4>
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat.</p>
+            <hr />
+            <h4><img src="http://placehold.it/30x30"> Trang Pak</h4>
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat.</p>
+            <hr />
+            <h4><img src="http://placehold.it/30x30"> Cady Heron</h4>
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat.</p>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="medium-grid-block collapse medium-2 large-3 vertical">
+    </div>
+  </div>
+
+{{!-- <div class="parallax-background">
   <div class="intro-text">
     scroll for parallax!
     <p><i class="fi-arrow-down"></i></p>
@@ -17,46 +74,7 @@
   <p>Chicken kielbasa swine ham hock filet mignon strip steak bacon fatback pork t-bone. Ground round shankle tongue, jowl flank spare ribs beef leberkas ham boudin shank capicola short ribs. Drumstick pork loin turkey pork chop salami andouille pork belly. Short loin tongue tri-tip, hamburger filet mignon pastrami doner shoulder turkey ball tip t-bone jerky ham chicken.</p>
 
   <p>Ground round flank pork loin salami, cow biltong hamburger swine brisket tongue tenderloin drumstick meatball. Biltong tongue salami ham shankle, leberkas meatloaf sirloin ball tip. Pork loin pastrami spare ribs beef capicola sausage kevin filet mignon pork chop. Bacon jerky turkey shoulder cow capicola ball tip shank. Ham tongue tail tri-tip kielbasa ham hock frankfurter meatball cow brisket. Shankle sausage filet mignon biltong pork loin. Short ribs spare ribs chuck pig meatloaf shoulder cow tail brisket biltong ball tip ham hock.</p>
-</div>
-
-
-{{!-- <div class="top-border"></div>
-<div id="container">
-<div class="row">
-  <div class="large-4 columns" id="sidebar">
-    <header>
-      <h1>RealFeelz</h1>
-      <h2>What's Real For You</h2>
-    </header>
-    <form {{action "postStatement" newPost on="submit" }}>
-      {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
-      <div id="recaptcha"></div>
-      <div class="status-text">
-        {{#if verifyingCaptcha}}
-        <p>Verifying Captcha...</p>
-        {{/if}} {{#if showingCaptcha}}
-        <p>Getting a Captcha...</p>
-        {{/if}} {{#if captchaVerified }}
-        <p>Now that we know you are a human, hit post again to share.</p>
-        {{/if}} {{#if tryAgain}}
-        <p>Try again...</p>
-        {{/if}}
-      </div>
-      <button class="button radius" type="submit">Post</button>
-    </form>
-  </div>
-
-  <div class="large-8 columns" id="content">
-    {{!--
-    <div class="small-12 medium-10 large-10 columns"> --}}
-      <ul>
-        {{#each}}
-        <h4 class="truths">{{body}}</h4>{{/each}}
-      </ul>
-      {{!-- </div> --}}
-  </div>
 </div> --}}
-
 
 
 {{!-- <div class="top-border"></div>
