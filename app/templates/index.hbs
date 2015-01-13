@@ -1,15 +1,17 @@
+{{view 'top-view'}}
+
 <div class="parallax-background">
   <div class="intro-text">
     <br>
-    <h1>RealFeelz</h1>
-    <h2>What's Real For You Right Now?</h2>
+    <h1><a name="#" href="#content">RealFeelz</a></h1>
+    <h2><a href="#content">What's Real For You Right Now?</a></h2>
     <br>
     <br>
     <p><i class="fi-arrow-down"></i></p>
   </div>
 </div>
 
-<div class="parallax-content">
+<a name="content"><div class="parallax-content"></a>
 
   <div class="grid-frame">
     <div class="medium-grid-block collapse medium-2 large-3 vertical"></div>
@@ -18,9 +20,9 @@
       <div class="grid-block">
         <div class="grid-block small-12 medium-12 vertical">
           <div class="message-input grid-content collapse shrink">
-            <h4 class="text-center">Anonymously Share Your Thoughts and Feelings</h4>
+            <h4 class="text-center"><a href="#content">Anonymously Share Your Thoughts and Feelings</a></h4>
             <form {{action "postStatement" newPost on="submit" }}>
-              {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
+              {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" cols="40" maxlength="200" require="true" wrap="hard"}}
               <div id="recaptcha"></div>
               <div class="status-text">
                 {{#if verifyingCaptcha}}
@@ -52,9 +54,11 @@
     <div class="medium-grid-block collapse medium-2 large-3 vertical">
     </div>
   </div>
+    <div class="small-12 columns">
+      <div class="dark title-bar">
+      <p class="title center"><a href="#">&copy;2014 RealFeelz</a></p>
+      </div>
+    </div>
 
-  <div class="dark title-bar">
-  <p class="title center">{{#link-to 'index'}}&copy;2014 RealFeelz{{/link-to}}</p>
-  </div>
 
 </div>
