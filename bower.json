@@ -11,7 +11,7 @@
     "ember-cli-test-loader": "dgeb/ember-cli-test-loader#test-agnostic",
     "ember-load-initializers": "stefanpenner/ember-load-initializers#0.0.2",
     "recaptcha-ajax": "*",
-    "foundation": "~5.4.7",
+    "foundation": "~5.5.0",
     "mocha": "~1.17.0",
     "chai": "~1.9.1",
     "ember-mocha-adapter": "0.2.1",
