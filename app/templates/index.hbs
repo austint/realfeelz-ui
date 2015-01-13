@@ -1,29 +1,24 @@
-{{view 'stickykit-view'}}
-{{view 'fullbackground-view'}}
-
-<img src="https://unsplash.imgix.net/photo-1416424312427-baefa7707d85?q=75&fm=jpg&s=b2ec9ff1f29da95d081f2c1155020fcc" id="bg" alt="">
-<div id="page-wrap">
-  <div class="row">
-    <div class="small-12 medium-10 large-10 small-centered columns">
-      <div class="row">
-        <div class="small-12 medium-10 large-10 small-centered columns">
-          <header class="realfeelz heavy">
-            <h2>{{#link-to 'flickerplate'}}RealFeelz{{/link-to}}</h2>
-            <h3>What's Real For Your Right Now?</h3>
-            <h4>Anonymously Share Your Truth</h4>
-          </header>
-        </div>
-      </div>
-    </div>
+<div class="parallax-background">
+  <div class="intro-text">
+    <br>
+    <h1>RealFeelz</h1>
+    <h2>What's Real For You Right Now?</h2>
+    <br>
+    <br>
+    <p><i class="fi-arrow-down"></i></p>
   </div>
 </div>
 
-<div id="sticky_item">
-  <div class="section-hero section-bg-color1">
-    <div class="row">
-      <div class="small-12 medium-10 large-10 small-centered columns">
-        <div class="download-box dlb-form">
-          <div id="mc_embed_signup">
+<div class="parallax-content">
+
+  <div class="grid-frame">
+    <div class="medium-grid-block collapse medium-2 large-3 vertical"></div>
+
+    <div class="grid-block medium-8 large-6 vertical">
+      <div class="grid-block">
+        <div class="grid-block small-12 medium-12 vertical">
+          <div class="message-input grid-content collapse shrink">
+            <h4 class="text-center">Anonymously Share Your Thoughts and Feelings</h4>
             <form {{action "postStatement" newPost on="submit" }}>
               {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
               <div id="recaptcha"></div>
@@ -38,34 +33,28 @@
                 <p>Try again...</p>
                 {{/if}}
               </div>
-              <button class="button radius" type="submit">Post</button>
+              <button class="button" type="submit">Post</button>
             </form>
+          </div>
+          <div class="grid-content">
+            <ul class="truth-container">
+              {{#each}}
+              <p class="truths">{{body}}</p>
+              <hr>
+              {{/each}}
+            </ul>
+            <hr />
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<div class="section-hero section-bg-color1">
-  <div class="row">
-    <div class="small-12 medium-10 large-10 small-centered columns">
-      <div class="download-box">
-        <ul>
-          {{#each}}
-          <p class="truths">{{body}}</p>
-          {{/each}}
-        </ul>
-      </div>
+
+    <div class="medium-grid-block collapse medium-2 large-3 vertical">
     </div>
   </div>
-</div>
-<footer class="section-bg-color2">
-  <div class="row">
-    <div class="small-12 medium-12 large-12 columns">
-      <ul>
-        <li>&copy;2014 {{#link-to 'flickerplate'}}RealFeelz{{/link-to}}</li>
-        <li>{{#link-to 'about'}}About{{/link-to}}</li>
-      </ul>
-    </div>
+
+  <div class="dark title-bar">
+  <p class="title center">{{#link-to 'new'}}&copy;2014 RealFeelz{{/link-to}}</p>
   </div>
-</footer>
+
+</div>
