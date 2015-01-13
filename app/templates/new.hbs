@@ -27,7 +27,6 @@
       <div class="grid-block">
         <div class="grid-block small-12 medium-12 vertical">
           <div class="message-input grid-content collapse shrink">
-            {{!-- <span class="inline-label"> --}}
             <form {{action "postStatement" newPost on="submit" }}>
               {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
               <div id="recaptcha"></div>
@@ -42,17 +41,15 @@
                 <p>Try again...</p>
                 {{/if}}
               </div>
-              <button class="button radius" type="submit">Post</button>
+              <button class="button" type="submit">Post</button>
             </form>
-{{!--               <input type="text" placeholder="Message">
-              <a href="#" class="button">Send</a> --}}
-            {{!-- </span> --}}
           </div>
           <div class="grid-content">
-            <ul>
+
+            <ul class="truth-container">
               {{#each}}
               <p class="truths">{{body}}</p>
-              <hr />
+              <hr>
               {{/each}}
             </ul>
             <hr />
