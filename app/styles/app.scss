@@ -18,22 +18,36 @@ h1 {
   // font-family: "Comfortaa";
   // font-family: "Raleway";
   font-weight: 700;
-  font-size: 60px;
+  font-size: 40px;
   color: #ffffff;
+  margin-left: 10px;
+  margin-right: 10px;
   // -webkit-text-stroke: 1px white;
 }
 h2 {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #ffffff;
   // border: 2px solid #ffffff;
-  font-size: 50px;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
   // border-radius: 4px;
 }
 h3 {
   font-family: "Open Sans";
   font-weight: normal;
   color: #ffffff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+h4 {
+  color: #00558b;
+  font-weight: bold;
+  font-family: "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+.title-bar {
+  padding: 0px !important;
 }
 hr {
     margin-top: 25px;
@@ -44,13 +58,8 @@ ul {
     margin: 0px;
     padding: 20px;
 }
-// .truth-container {
-//   opacity: 0.6;
-//   filter: alpha(opacity=60); /* For IE8 and earlier */
-// }
 p {
     color: #000000 !important;
-    // opacity: 1 !important;
     font-weight: bold;
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
@@ -58,14 +67,14 @@ p {
     border-radius: 4px;
 }
 .grid-content {
-    border: 2px solid #778899 !important;
+    border-left: 2px solid #00558b !important;
+    border-top: 2px solid #00558b !important;
+    border-bottom: 2px solid #00558b !important;
     padding: 0px !important;
     border-radius: 4px;
     margin-bottom: 15px;
-    // background: url('/assets/images/realfeelz-ocean-first.jpeg');
-    // background: radial-gradient(circle at 48.54% 95.94%, #34649c, transparent 100%),radial-gradient(circle at 49.27% 93.49%, #716894, transparent 100%),radial-gradient(circle at 50% 50%, #000000, #000000 100%);
-    // background-color: #1E1121;
-    // background: linear-gradient(19deg, #413c55, #413c55);
+    // margin-left: 10px;
+    // margin-right: 10px;
     background-color: rgba(255, 255, 255, 0.4);
 }
 .message-input {
@@ -75,12 +84,7 @@ textarea {
     margin-top: 15px;
     border: 1px solid #778899;
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    // height: 36px;
-    // padding: 6px 10px;
-    /* The 6px vertically centers text on FF, ignored by Webkit */
-
     border-radius: 4px;
-    // box-shadow: none;
     background: #fff;
 }
 textarea:focus,
@@ -111,7 +115,7 @@ select:focus {
 .parallax-background {
     background: url('/assets/images/realfeelz-ocean-first.jpeg');
     // background: url('https://unsplash.imgix.net/14/unsplash_524000a90aaad_1.JPG?q=75&fm=jpg&s=9305563c74d318288ada6e064cd3f176');
-    height: 620px;
+    height: 500px;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
