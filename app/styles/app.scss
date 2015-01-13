@@ -1,12 +1,40 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,500italic,700,700italic|Inconsolata:400,700|Raleway:400,700|Raleway:400,700|Karla:400,400italic,700,700italic);
+
+@import url(http://fonts.googleapis.com/css?family=Questrial|Cabin:400,500,700|Playfair+Display:400,700|Quicksand:400,700|Muli|Karla:400,700|Open+Sans|Raleway:400,700,500|Inconsolata|Alegreya|Comfortaa:400,700|Open+Sans:400,700|PT+Sans:400,700);
+// @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,500italic,700,700italic|Inconsolata:400,700|Raleway:400,700|Raleway:400,700|Karla:400,400italic,700,700italic);
 // @import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
 // @import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
 @import 'bower_components/foundation-apps/scss/foundation.scss';
 // @import 'bower_components/foundation/scss/foundation.scss';
 button {
   border-radius: 4px !important;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-
+h1 {
+  // font-family: "Quicksand";
+  font-family: "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  // font-family: "Muli";
+  // font-family: "Karla";
+  // font-family: "Playfair Display";
+  // font-family: "Comfortaa";
+  // font-family: "Raleway";
+  font-weight: 700;
+  font-size: 60px;
+  color: #ffffff;
+  // -webkit-text-stroke: 1px white;
+}
+h2 {
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: #ffffff;
+  // border: 2px solid #ffffff;
+  font-size: 50px;
+  // border-radius: 4px;
+}
+h3 {
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: #ffffff;
+}
 hr {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -23,8 +51,8 @@ ul {
 p {
     color: #000000 !important;
     // opacity: 1 !important;
-    font-weight: normal;
-    font-family: "Inconsolata", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 .grid-block {
     border-radius: 4px;
@@ -38,7 +66,7 @@ p {
     // background: radial-gradient(circle at 48.54% 95.94%, #34649c, transparent 100%),radial-gradient(circle at 49.27% 93.49%, #716894, transparent 100%),radial-gradient(circle at 50% 50%, #000000, #000000 100%);
     // background-color: #1E1121;
     // background: linear-gradient(19deg, #413c55, #413c55);
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 .message-input {
     background-color: rgba(255, 255, 255, 0);
@@ -46,6 +74,7 @@ p {
 textarea {
     margin-top: 15px;
     border: 1px solid #778899;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     // height: 36px;
     // padding: 6px 10px;
     /* The 6px vertically centers text on FF, ignored by Webkit */
@@ -78,6 +107,7 @@ select:focus {
 .avatar-section {
     border-top: 2px solid #eee;
 }
+
 .parallax-background {
     background: url('/assets/images/realfeelz-ocean-first.jpeg');
     // background: url('https://unsplash.imgix.net/14/unsplash_524000a90aaad_1.JPG?q=75&fm=jpg&s=9305563c74d318288ada6e064cd3f176');
@@ -96,13 +126,21 @@ select:focus {
     text-align: center;
     margin-top: 15%;
 }
+// .parallax-content {
+//   max-width: 100%;
+//   position: relative;
+//   top: 500px;
+//   padding: 50px;
+//   font-size: 20px;
+//   background-color: #fff;
+// }
 .parallax-content {
     max-width: 100%;
     position: relative;
     top: 500px;
-    // padding: 50px;
+    // padding: 20px;
     font-size: 20px;
-    background: url('/assets/images/realfeelz-ocean-second-.jpeg') no-repeat center center fixed;
+    background: url('/assets/images/realfeelz-ocean-second-.jpeg');
     // -webkit-background-size: cover;
     // -moz-background-size: cover;
     // -o-background-size: cover;
