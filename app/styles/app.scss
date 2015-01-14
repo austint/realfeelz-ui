@@ -1,164 +1,136 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700|Pacifico|PT+Sans|Lato:400,700);
-
-// $crumb-bg: #000000;
-// $crumb-font-color: #ffffff;
-// $crumb-font-color: #ffffff;
-// $button-bg-color: #4D7EA8;
-
-@import 'bower_components/foundation/scss/foundation';
-@import 'bower_components/foundation/scss/normalize';
-
-.ember-view {
-  height: 100%;
-}
-
-.real-feelz {
-  margin: 0px !important;
-  color: #ffffff !important;
-  font-family: "Pacifico", "Open Sans", sans-serif !important;
-  font-size: 3em !important;
-  padding-bottom: 0px !important;
-}
-
-.right-now {
-  color: #ffffff !important;
-  font-family: "Lato", "PT Sans", sans-serif !important;
-  margin: 0px !important;
-  padding-top: 20px !important;
-  padding-bottom: 0px !important;
-  font-size: 2em !important;
-}
-
-#home {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-#bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.bgwidth {
-  width: 100%;
-}
-
-.bgheight {
-  height: 100%;
-}
-
-#page-wrap {
-  position: relative;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background: white;
-  -moz-box-shadow: 0 0 0px black;
-  -webkit-box-shadow: 0 0 0px black;
-  box-shadow: 0 0 0px black;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-#title-containter {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-#truth-containter {
-  padding: 0px;
-  margin: 0px;
-}
-
-footer {
-  text-align: center;
-}
-
-#recaptcha_area, #recaptcha_table {
-  margin: 0 auto !important;
-  margin-bottom: 1em !important;
-}
-
-.truths {
-  font-size: 1em;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
-}
-
-#statements {
-  list-style-type: none;
-  text-align: center;
-  padding: 0px;
-  margin: 0px;
-}
-
-textarea {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,500,700|Raleway:400,700,500|Open+Sans:400,700);
+@import 'bower_components/foundation-apps/scss/foundation.scss';
 
 button {
-  position: middle !important;
-}
-
-p {
-  text-align: center;
-  color: #ffffff;
+  border-radius: 4px !important;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #ffffff !important;
 }
 
-.content-a {
-  display: table;
+h1 {
+  font-family: "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.content-b {
-  display: table-cell;
-    position: relative;
-  vertical-align: middle;
+h2 {
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #ffffff;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+h3 {
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: #ffffff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+h4 {
+  color: #ffffff;
+  font-family: "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+.title-bar {
+  padding: 0px !important;
+}
+
+hr {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+ul {
+  margin: 0px;
+  padding: 20px;
+}
+
+p {
+  color: #000000 !important;
+  font-weight: bold;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+.grid-block {
+  border-radius: 4px;
+}
+
+.grid-content {
+  border: 2px solid #00558b !important;
+  padding: 0px !important;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.message-input {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+textarea {
+  margin-top: 15px;
+  border: 1px solid #778899;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  border-radius: 4px;
+  background: #fff;
+}
+
+textarea:focus,
+select:focus {
+  border: 1px solid #00558b;
+  outline: 0;
+}
+
+.message-input {
+    border: 0px !important;
+}
+
+.message-input,
+.message-input .inline-label,
+.menu-bar {
+    margin-bottom: 0;
+}
+
+.parallax-background {
+  background: url('/assets/images/realfeelz-ocean-first.jpeg');
+  height: 500px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+}
+
+.intro-text {
+  font-size: 50px;
+  color: #fff;
   text-align: center;
+  margin-top: 15%;
 }
 
-.flexcontainer {
-   display: -webkit-flex;
-   display: flex;
+.parallax-content {
+  max-width: 100%;
+  position: relative;
+  top: 500px;
+  font-size: 20px;
+  background: url('/assets/images/realfeelz-ocean-second.jpeg');
 }
 
-.flexrow {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-}
-
-.flexcolumn {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-}
-
-.flexcenter {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row; /* works with row or column */
-   flex-direction: row;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-justify-content: center;
-   justify-content: center;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }

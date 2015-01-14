@@ -20,4 +20,4 @@ var app = new EmberApp();
 // app.import('vendor/captcha/captcha.js');
 app.import('bower_components/recaptcha-ajax/recaptcha_ajax.js');
 
-module.exports = app.toTree();
+module.exports = app.toTree()
