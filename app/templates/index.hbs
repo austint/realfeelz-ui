@@ -1,4 +1,5 @@
 {{view 'cleartext-view'}}
+{{view 'emptypost-view'}}
 
 <div class="parallax-background">
   <div class="intro-text">
@@ -24,7 +25,7 @@
       <div class="grid-block small-12 medium-12 vertical">
         <div class="message-input grid-content">
           <h4 class="text-center"><a href="#posts">Anonymously Share Your Truth</a></h4>
-          <form {{action "postStatement" newPost on="submit" }}>
+          <form id="form-id" {{action "postStatement" newPost on="submit" }}>
             {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard" id="textbox"}}
             {{textarea placeholder="what's real for you right now?" class="classy-text-field" value=newPost type="text" cols="40" maxlength="200" require="true" wrap="hard"}}
             <button class="button" type="submit" id="clearButton">Post</button>
