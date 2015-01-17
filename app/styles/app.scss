@@ -1,15 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Cabin:400,500,700|Raleway:400,700,500|Open+Sans:400,700);
 @import 'bower_components/foundation-apps/scss/foundation.scss';
-
 button {
   border-radius: 4px !important;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-
 a {
   color: #ffffff !important;
 }
-
 h1 {
   font-family: "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -17,7 +14,6 @@ h1 {
   margin-left: 10px;
   margin-right: 10px;
 }
-
 h2 {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -26,7 +22,6 @@ h2 {
   margin-left: 10px;
   margin-right: 10px;
 }
-
 h3 {
   font-family: "Open Sans";
   font-weight: normal;
@@ -34,36 +29,29 @@ h3 {
   margin-left: 10px;
   margin-right: 10px;
 }
-
 h4 {
   color: #ffffff;
   font-family: "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-
 .title-bar {
   padding: 0px !important;
 }
-
 hr {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-
 ul {
   margin: 0px;
   padding: 20px;
 }
-
 p {
   color: #000000 !important;
   font-weight: bold;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-
 .grid-block {
   border-radius: 4px;
 }
-
 .grid-content {
   border: 2px solid #00558b !important;
   padding: 0px !important;
@@ -73,11 +61,9 @@ p {
   margin-left: 10px;
   background-color: rgba(255, 255, 255, 0.4);
 }
-
 .message-input {
   background-color: rgba(255, 255, 255, 0);
 }
-
 textarea {
   margin-top: 15px;
   border: 1px solid #778899;
@@ -85,24 +71,19 @@ textarea {
   border-radius: 4px;
   background: #fff;
 }
-
 textarea:focus, select:focus {
   border: 1px solid #00558b;
   outline: 0;
 }
-
 .classy-text-field {
   display: none;
 }
-
 .message-input {
   border: 0px !important;
 }
-
 .message-input, .message-input .inline-label, .menu-bar {
   margin-bottom: 0;
 }
-
 .parallax-background {
   background: url('/assets/images/realfeelz-ocean-first.jpeg');
   height: 500px;
@@ -114,14 +95,12 @@ textarea:focus, select:focus {
   position: fixed;
   width: 100%;
 }
-
 .intro-text {
   font-size: 50px;
   color: #fff;
   text-align: center;
   margin-top: 15%;
 }
-
 .parallax-content {
   max-width: 100%;
   position: relative;
@@ -129,13 +108,11 @@ textarea:focus, select:focus {
   font-size: 20px;
   background: url('/assets/images/realfeelz-ocean-second.jpeg');
 }
-
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
 }
-
 .loading {
   position: fixed;
   z-index: 999;
@@ -163,14 +140,14 @@ html, body {
 /* :not(:required) hides these rules from IE9 and below */
 
 .loading:not(:required) {
-    /* hide "loading..." text */
+  /* hide "loading..." text */
+
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
   border: 0;
 }
-
 .loading:not(:required):after {
   content: '';
   display: block;
@@ -197,7 +174,6 @@ html, body {
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -206,7 +182,6 @@ html, body {
     transform: rotate(360deg);
   }
 }
-
 @-moz-keyframes spinner {
   0% {
     -webkit-transform: rotate(0deg);
@@ -215,7 +190,6 @@ html, body {
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -224,7 +198,6 @@ html, body {
     transform: rotate(360deg);
   }
 }
-
 @-o-keyframes spinner {
   0% {
     -webkit-transform: rotate(0deg);
@@ -233,7 +206,6 @@ html, body {
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -242,7 +214,6 @@ html, body {
     transform: rotate(360deg);
   }
 }
-
 @keyframes spinner {
   0% {
     -webkit-transform: rotate(0deg);
@@ -251,7 +222,6 @@ html, body {
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
