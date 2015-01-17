@@ -1,6 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Cabin:400,500,700|Raleway:400,700,500|Open+Sans:400,700);
 @import 'bower_components/foundation-apps/scss/foundation.scss';
 
+.message-input {
+  overflow-y: hidden !important;
+}
+
 button {
   border-radius: 4px !important;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
