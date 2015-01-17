@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Cabin:400,500,700|Raleway:400,700,500|Open+Sans:400,700);
 @import 'bower_components/foundation-apps/scss/foundation.scss';
+
 .message-input {
   overflow-y: hidden !important;
 }
@@ -115,6 +116,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  background: #393545;
 }
 .loading {
   position: fixed;
