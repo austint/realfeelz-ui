@@ -20,4 +20,10 @@ var app = new EmberApp();
 // app.import('vendor/captcha/captcha.js');
 // app.import('bower_components/recaptcha-ajax/recaptcha_ajax.js');
 
+
+app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css');
+app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js');
+
+app.import('bower_components/jquery-mousewheel/jquery.mousewheel.js');
+
 module.exports = app.toTree()
