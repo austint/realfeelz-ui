@@ -20,10 +20,10 @@ module.exports = function(environment) {
       'report-uri': "http://localhost:4200",
       'default-src': "'none'",
       'script-src': "'self' 'unsafe-eval' 'unsafe-inline' http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js",
-      'font-src': "'self' http://fonts.gstatic.com https://fonts.gstatic.com",
+      'font-src': "'self' http://fonts.googleapis.com https://fonts.googleapis.com/",
         'connect-src': "'self' https://realfeelz-server.herokuapp.com/api/statements http://realfeelz-server.herokuapp.com/api/statements https://realfeelz-server.herokuapp.com http://realfeelz-server.herokuapp.com",
-      'img-src': "'self'",
-      'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com http://fonts.googleapis.com",
+      'img-src': "'self' https://unsplash.imgix.net",
+      'style-src': "'self' 'unsafe-inline'",
       'media-src': "'self'"
     }
   };
