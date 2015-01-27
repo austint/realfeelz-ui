@@ -5,7 +5,7 @@ export default Ember.View.extend({
     Ember.$(document).ready(function() {
       Ember.$(".content").mCustomScrollbar({
         theme: "minimal",
-        scrollInertia: 700,
+        scrollInertia: 500,
         autoDraggerLength: false
       });
     });

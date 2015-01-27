@@ -7,11 +7,9 @@ export default Ember.View.extend({
         verticalCentered: true,
         anchors: ['home', 'truths'],
         navigation: true,
-        navigationPosition: 'center',
-        // navigationTooltips: ['home', 'truths'],
-        // responsive: 900,
-        //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
-        css3: true
+        navigationPosition: 'right',
+        css3: false
+        // responsive: 900
       });
     });
   }

@@ -1,18 +1,26 @@
-{{view 'fullpage-view'}} {{view 'malihu-view'}}
+{{view 'fullpage-view'}}
+{{view 'malihu-view'}}
 
-{{!-- <div id="header">Header</div> --}}
-{{!-- <div id="footer"></div> --}}
+<div id="header">
+  <div class="row realfeelz">
+  <div class="small-12 medium-12 large-12 columns">
+    <div class="small-3 medium-3 large-3 columns">
+      <h1 class="text-center">RealFeelz</h1>
+    </div>
+    <div class="small-1 medium-1 large-1 columns">
+    </div>
+    <div class="small-8 medium-8 large-8 columns">
+      <h1 class="text-center">What's Real For You Right Now?</h1>
+    </div>
+  </div>
+  </div>
+</div>
 
 <div id="fullpage">
   <div class="section " id="section0">
-    {{!--
-    <div class="top-border"></div> --}}
     <div class="row">
       <div class="small-12 medium-12 large-12 small-centered columns">
-        {{!--
-        <header> --}}
-          <h1>RealFeelz</h1>
-          <h2>What's Real For You Right Now?</h2> {{!-- </header> --}}
+        <h2>What's Real For You Right Now?</h2>
       </div>
       <div class="small-12 medium-12 large-12 small-centered columns">
         <form {{action "postStatement" newPost on="submit" }}>
@@ -24,32 +32,22 @@
   </div>
 
   <div class="section" id="section2">
-{{!--     <div class="row">
-      <div class="small-12 medium-12 large-12 small-centered columns">
-      </div>
-    </div> --}}
     <div class="row full-page">
       <div class="small-12 medium-12 large-12 small-centered columns">
         <div id="demo">
           <section id="examples">
-            {{!--
-            <div id="content-1" class="content"> --}}
+            <div id="content-1" class="content">
               <div class="content mCustomScrollbar" data-mcs-theme="minimal">
-                {{!--
-                <h2>theme: "minimal"</h2>
-                <hr /> --}}
                 <ul class="truth-container">
                   {{#each}}
                   <p class="truths">{{body}}</p>
                   <hr> {{/each}}
                 </ul>
                 <hr />
-                <p>End of content.</p>
               </div>
-              {{!-- </div> --}}
-          </section>
+            </section>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
