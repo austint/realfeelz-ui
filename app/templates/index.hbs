@@ -1,61 +1,25 @@
+{{view 'fullpage-view'}}
+{{!-- {{view 'onepagescroll-view'}} --}}
 {{!-- {{view 'malihu-view'}} --}}
 {{!-- {{view 'overscroll-view'}} --}}
 {{!-- {{view 'cleartext-view'}} --}}
 
-<div class="parallax-background">
-  <div class="intro-text">
-    <br>
-    <h1><a name="#" href="#posts">RealFeelz</a></h1>
-    <h2><a href="#posts">What's Real For You Right Now?</a></h2>
-    <br>
-    <br>
-    <p><i class="fi-arrow-down"></i>
-    </p>
+<div id="fullpage">
+  <div class="section " id="section0">
+    <h1>fullPage.js</h1>
   </div>
-</div>
-
-<a name="posts"><div class="parallax-content"></a>
-  <div class="grid-frame">
-    <div class="medium-grid-block medium-2 large-3 vertical"></div>
-
-    <div class="grid-block medium-8 large-6 vertical">
-      <div class="grid-block">
-        <div class="grid-block small-12 medium-12 vertical">
-          <div class="message-input grid-content collapse shrink">
-            <h4 class="text-center"><a href="#posts">Anonymously Share Your Truth</a></h4>
-            <form {{action "postStatement" newPost on="submit" }}>
-              {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard" id="textbox"}} {{textarea placeholder="what's real for you right now?" class="classy-text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
-              <button class="button" type="submit" id="clearButton">Post</button>
-            </form>
-          </div>
-          <div class="grid-content">
-            <ul class="truth-container">
-              {{#each}}
-              <p class="truths">{{body}}</p>
-              <hr> {{/each}}
-            </ul>
-            <hr />
-          </div>
-          {{!--
-          <div id="content-1">
-            <ul class="truth-container">
-              {{#each}}
-              <p class="truths">{{body}}</p>
-              <hr> {{/each}}
-            </ul>
-          </div> --}}
-        </div>
-      </div>
+  <div class="section" id="section1">
+    <div class="slide" id="slide1">
+      <h1>Slide Backgrounds</h1>
     </div>
-
-    <div class="medium-grid-block medium-2 large-3 vertical">
+    <div class="slide" id="slide2">
+      <h1>Totally customizable</h1>
     </div>
   </div>
-
-  <div class="small-12 columns">
-    <div class="dark title-bar">
-      <p class="title center"><a href="#">&copy;2014 RealFeelz</a>
-      </p>
-    </div>
+  <div class="section" id="section2">
+    <h1>Lovely images <br />for a lovely page</h1>
+  </div>
+  <div class="section" id="section3">
+    <h1>One Image = One thousand words</h1>
   </div>
 </div>

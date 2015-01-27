@@ -17,13 +17,15 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
-// app.import('vendor/captcha/captcha.js');
-// app.import('bower_components/recaptcha-ajax/recaptcha_ajax.js');
+// app.import('bower_components/onepage-scroll/jquery.onepage-scroll.js');
+// app.import('bower_components/onepage-scroll/onepage-scroll.css');
 
+app.import('bower_components/fullpage.js/jquery.fullPage.css');
+app.import('bower_components/fullpage.js/jquery.fullPage.js');
 
-app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css');
-app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js');
+// app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css');
+// app.import('bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js');
 
-app.import('bower_components/jquery-mousewheel/jquery.mousewheel.js');
+// app.import('bower_components/jquery-mousewheel/jquery.mousewheel.js');
 
 module.exports = app.toTree()

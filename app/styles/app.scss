@@ -1,237 +1,289 @@
-@import url(http://fonts.googleapis.com/css?family=Cabin:400,500,700|Raleway:400,700,500|Open+Sans:400,700);
-@import 'bower_components/foundation-apps/scss/foundation.scss';
-
-.message-input {
-  overflow-y: hidden !important;
-}
-button {
-  border-radius: 4px !important;
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-}
-a {
-  color: #ffffff !important;
-}
+// @import url(http://fonts.googleapis.com/css?family=Cabin:400,500,700|Raleway:400,700,500|Open+Sans:400,700);
+// @import 'bower_components/foundation/scss/normalize';
+// @import 'bower_components/foundation/scss/foundation';
+// @import 'bower_components/foundation-apps/scss/foundation.scss';
 h1 {
-  font-family: "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-h2 {
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: #ffffff;
-  font-size: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-h3 {
-  font-family: "Open Sans";
-  font-weight: normal;
-  color: #ffffff;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-h4 {
-  color: #ffffff;
-  font-family: "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-}
-.title-bar {
-  padding: 0px !important;
-}
-hr {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-ul {
-  margin: 0px;
-  padding: 20px;
-}
-p {
-  color: #000000 !important;
-  font-weight: bold;
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-}
-.grid-block {
-  border-radius: 4px;
-}
-.grid-content {
-  border: 2px solid #00558b !important;
-  padding: 0px !important;
-  border-radius: 4px;
-  margin-bottom: 15px;
-  margin-right: 10px;
-  margin-left: 10px;
-  background-color: rgba(255, 255, 255, 0.4);
-}
-.message-input {
-  background-color: rgba(255, 255, 255, 0);
-}
-textarea {
-  margin-top: 15px;
-  border: 1px solid #778899;
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  border-radius: 4px;
-  background: #fff;
-}
-textarea:focus, select:focus {
-  border: 1px solid #00558b;
-  outline: 0;
-}
-.classy-text-field {
-  display: none;
-}
-.message-input {
-  border: 0px !important;
-}
-.message-input, .message-input .inline-label, .menu-bar {
-  margin-bottom: 0;
-}
-.parallax-background {
-  background: url('/assets/images/realfeelz-ocean-first.jpeg');
-  height: 500px;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: fixed;
-  width: 100%;
-}
-.intro-text {
-  font-size: 50px;
+  font-size: 5em;
+  font-family: arial, helvetica;
   color: #fff;
-  text-align: center;
-  margin-top: 15%;
-}
-.parallax-content {
-  max-width: 100%;
-  position: relative;
-  top: 500px;
-  font-size: 20px;
-  background: url('/assets/images/realfeelz-ocean-second.jpeg');
-}
-html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  background: #393545;
 }
-.loading {
-  position: fixed;
-  z-index: 999;
-  height: 2em;
-  width: 2em;
-  overflow: show;
-  margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-/* Transparent Overlay */
+/* Centered texts in each section
+    * --------------------------------------- */
 
-.loading:before {
-  content: '';
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #393545;
+.section {
+  text-align: center;
 }
-/* :not(:required) hides these rules from IE9 and below */
+/* Backgrounds will cover all the section
+    * --------------------------------------- */
 
-.loading:not(:required) {
-  /* hide "loading..." text */
+#section0, #section1, #section2, #section3 {
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* Defining each sectino background and styles
+    * --------------------------------------- */
 
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
+#section0 {
+  background-image: url('https://unsplash.imgix.net/photo-1418226970361-9f1f7227d638?q=75&fm=jpg&s=4a5f190c7499eff6f7c77d88d8abf57e');
+  padding: 30% 0 0 0;
 }
-.loading:not(:required):after {
-  content: '';
-  display: block;
-  font-size: 10px;
-  width: 1em;
-  height: 1em;
-  margin-top: -0.5em;
-  -webkit-animation: spinner 1500ms infinite linear;
-  -moz-animation: spinner 1500ms infinite linear;
-  -ms-animation: spinner 1500ms infinite linear;
-  -o-animation: spinner 1500ms infinite linear;
-  animation: spinner 1500ms infinite linear;
-  border-radius: 0.5em;
-  -webkit-box-shadow: #ffffff 1.5em 0 0 0, #ffffff 1.1em 1.1em 0 0, #ffffff 0 1.5em 0 0, #ffffff -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, #ffffff 0 -1.5em 0 0, #ffffff 1.1em -1.1em 0 0;
-  box-shadow: #ffffff 1.5em 0 0 0, #ffffff 1.1em 1.1em 0 0, #ffffff 0 1.5em 0 0, #ffffff -1.1em 1.1em 0 0, #ffffff -1.5em 0 0 0, #ffffff -1.1em -1.1em 0 0, #ffffff 0 -1.5em 0 0, #ffffff 1.1em -1.1em 0 0;
+#section2 {
+  background-image: url('https://unsplash.imgix.net/photo-1417444900330-dc44c79af021?q=75&fm=jpg&s=691e51ea2e210a16c23294a029752141');
+  padding: 6% 0 0 0;
 }
-/* Animation */
+#section3 {
+  background-image: url('https://unsplash.imgix.net/photo-1416184008836-5486f3e2cf58?q=75&fm=jpg&s=1168eb53b941d6e992595864a3771f7a');
+  padding: 6% 0 0 0;
+}
+#section3 h1 {
+  color: #000;
+}
+/*Adding background for the slides
+    * --------------------------------------- */
 
-@-webkit-keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+#slide1 {
+  background-image: url('https://ununsplash.imgix.net/photo-1413913619092-816734eed3a7?q=75&fm=jpg&s=7653dd05ea22b7546a416b360b9d3bdd');
+  padding: 6% 0 0 0;
 }
-@-moz-keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+#slide2 {
+  background-image: url('https://unsplash.imgix.net/uploads/1413386993023a925afb4/4e769802?q=75&fm=jpg&s=84dfb097d39ff1600cdd32be44813650');
+  padding: 6% 0 0 0;
 }
-@-o-keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+/* Bottom menu
+    * --------------------------------------- */
+
+#infoMenu li a {
+  color: #fff;
 }
-@keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
+// .message-input {
+//   overflow-y: hidden !important;
+// }
+// button {
+//   border-radius: 4px !important;
+//   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+// }
+// a {
+//   color: #ffffff !important;
+// }
+// h1 {
+//   font-family: "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+//   font-weight: 700;
+//   font-size: 40px;
+//   margin-left: 10px;
+//   margin-right: 10px;
+// }
+// h2 {
+//   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+//   font-weight: normal;
+//   color: #ffffff;
+//   font-size: 30px;
+//   margin-left: 10px;
+//   margin-right: 10px;
+// }
+// h3 {
+//   font-family: "Open Sans";
+//   font-weight: normal;
+//   color: #ffffff;
+//   margin-left: 10px;
+//   margin-right: 10px;
+// }
+// h4 {
+//   color: #ffffff;
+//   font-family: "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+// }
+// .title-bar {
+//   padding: 0px !important;
+// }
+// hr {
+//   margin-top: 25px;
+//   margin-bottom: 25px;
+// }
+// ul {
+//   margin: 0px;
+//   padding: 20px;
+// }
+// p {
+//   color: #000000 !important;
+//   font-weight: bold;
+//   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+// }
+// .grid-block {
+//   border-radius: 4px;
+// }
+// .grid-content {
+//   border: 2px solid #00558b !important;
+//   padding: 0px !important;
+//   border-radius: 4px;
+//   margin-bottom: 15px;
+//   margin-right: 10px;
+//   margin-left: 10px;
+//   background-color: rgba(255, 255, 255, 0.4);
+// }
+// .message-input {
+//   background-color: rgba(255, 255, 255, 0);
+// }
+// textarea {
+//   margin-top: 15px;
+//   border: 1px solid #778899;
+//   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+//   border-radius: 4px;
+//   background: #fff;
+// }
+// textarea:focus, select:focus {
+//   border: 1px solid #00558b;
+//   outline: 0;
+// }
+// .classy-text-field {
+//   display: none;
+// }
+// .message-input {
+//   border: 0px !important;
+// }
+// .message-input, .message-input .inline-label, .menu-bar {
+//   margin-bottom: 0;
+// }
+// .parallax-background {
+//   background: url('/assets/images/realfeelz-ocean-first.jpeg');
+//   height: 500px;
+//   background-repeat: no-repeat;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+//   position: fixed;
+//   width: 100%;
+// }
+// .intro-text {
+//   font-size: 50px;
+//   color: #fff;
+//   text-align: center;
+//   margin-top: 15%;
+// }
+// .parallax-content {
+//   max-width: 100%;
+//   position: relative;
+//   top: 500px;
+//   font-size: 20px;
+//   background: url('/assets/images/realfeelz-ocean-second.jpeg');
+// }
+// html, body {
+//   margin: 0;
+//   padding: 0;
+//   height: 100%;
+//   background: #393545;
+// }
+// .loading {
+//   position: fixed;
+//   z-index: 999;
+//   height: 2em;
+//   width: 2em;
+//   overflow: show;
+//   margin: auto;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+// }
+// /* Transparent Overlay */
+// .loading:before {
+//   content: '';
+//   display: block;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: #393545;
+// }
+// /* :not(:required) hides these rules from IE9 and below */
+// .loading:not(:required) {
+//   /* hide "loading..." text */
+//   font: 0/0 a;
+//   color: transparent;
+//   text-shadow: none;
+//   background-color: transparent;
+//   border: 0;
+// }
+// .loading:not(:required):after {
+//   content: '';
+//   display: block;
+//   font-size: 10px;
+//   width: 1em;
+//   height: 1em;
+//   margin-top: -0.5em;
+//   -webkit-animation: spinner 1500ms infinite linear;
+//   -moz-animation: spinner 1500ms infinite linear;
+//   -ms-animation: spinner 1500ms infinite linear;
+//   -o-animation: spinner 1500ms infinite linear;
+//   animation: spinner 1500ms infinite linear;
+//   border-radius: 0.5em;
+//   -webkit-box-shadow: #ffffff 1.5em 0 0 0, #ffffff 1.1em 1.1em 0 0, #ffffff 0 1.5em 0 0, #ffffff -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, #ffffff 0 -1.5em 0 0, #ffffff 1.1em -1.1em 0 0;
+//   box-shadow: #ffffff 1.5em 0 0 0, #ffffff 1.1em 1.1em 0 0, #ffffff 0 1.5em 0 0, #ffffff -1.1em 1.1em 0 0, #ffffff -1.5em 0 0 0, #ffffff -1.1em -1.1em 0 0, #ffffff 0 -1.5em 0 0, #ffffff 1.1em -1.1em 0 0;
+// }
+// /* Animation */
+// @-webkit-keyframes spinner {
+//   0% {
+//     -webkit-transform: rotate(0deg);
+//     -moz-transform: rotate(0deg);
+//     -ms-transform: rotate(0deg);
+//     -o-transform: rotate(0deg);
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     -webkit-transform: rotate(360deg);
+//     -moz-transform: rotate(360deg);
+//     -ms-transform: rotate(360deg);
+//     -o-transform: rotate(360deg);
+//     transform: rotate(360deg);
+//   }
+// }
+// @-moz-keyframes spinner {
+//   0% {
+//     -webkit-transform: rotate(0deg);
+//     -moz-transform: rotate(0deg);
+//     -ms-transform: rotate(0deg);
+//     -o-transform: rotate(0deg);
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     -webkit-transform: rotate(360deg);
+//     -moz-transform: rotate(360deg);
+//     -ms-transform: rotate(360deg);
+//     -o-transform: rotate(360deg);
+//     transform: rotate(360deg);
+//   }
+// }
+// @-o-keyframes spinner {
+//   0% {
+//     -webkit-transform: rotate(0deg);
+//     -moz-transform: rotate(0deg);
+//     -ms-transform: rotate(0deg);
+//     -o-transform: rotate(0deg);
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     -webkit-transform: rotate(360deg);
+//     -moz-transform: rotate(360deg);
+//     -ms-transform: rotate(360deg);
+//     -o-transform: rotate(360deg);
+//     transform: rotate(360deg);
+//   }
+// }
+// @keyframes spinner {
+//   0% {
+//     -webkit-transform: rotate(0deg);
+//     -moz-transform: rotate(0deg);
+//     -ms-transform: rotate(0deg);
+//     -o-transform: rotate(0deg);
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     -webkit-transform: rotate(360deg);
+//     -moz-transform: rotate(360deg);
+//     -ms-transform: rotate(360deg);
+//     -o-transform: rotate(360deg);
+//     transform: rotate(360deg);
+//   }
+// }
