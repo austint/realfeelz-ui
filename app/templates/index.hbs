@@ -1,5 +1,6 @@
-{{view 'fullpage-view'}} {{view 'malihu-view'}} {{!--
-<div id="header">Header</div>
+{{view 'fullpage-view'}} {{view 'malihu-view'}}
+
+{{!-- <div id="header">Header</div>
 <div id="footer"></div> --}}
 
 <div id="fullpage">
@@ -26,10 +27,10 @@
   <div class="section" id="section2">
     <div class="row">
       <div class="small-12 medium-12 large-12 small-centered columns">
-        <form {{action "postStatement" newPost on="submit" }}>
+{{!--         <form {{action "postStatement" newPost on="submit" }}>
           {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard" id="textbox"}} {{textarea placeholder="what's real for you right now?" class="classy-text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
           <button class="button" type="submit" id="clearButton">Post</button>
-        </form>
+        </form> --}}
       </div>
     </div>
     <div class="row full-page">
@@ -38,7 +39,7 @@
           <section id="examples">
             {{!--
             <div id="content-1" class="content"> --}}
-              <div class="content mCustomScrollbar">
+              <div class="content mCustomScrollbar" data-mcs-theme="minimal">
                 {{!--
                 <h2>theme: "minimal"</h2>
                 <hr /> --}}
