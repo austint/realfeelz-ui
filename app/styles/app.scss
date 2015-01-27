@@ -5,6 +5,25 @@
 @import 'bower_components/foundation/scss/normalize.scss';
 @import 'bower_components/foundation/scss/foundation.scss';
 
+// #header, #footer{
+//   position:fixed;
+//   height: 50px;
+//   display:block;
+//   width: 100%;
+//   background: #333;
+//   z-index:9;
+//   text-align:center;
+//   color: #f2f2f2;
+//   padding: 20px 0 0 0;
+// }
+
+// #header{
+//   top:0px;
+// }
+// #footer{
+//   bottom:0px;
+// }
+
 .classy-text-field {
   display: none;
 }
@@ -28,7 +47,7 @@
   // width: 740px;
   // max-width: 97%;
   // height: 400px;
-  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+  // -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
 }
 
 // .content.hidden{ display: none; }
@@ -371,7 +390,7 @@
 // .init-hidden #examples{ min-height: 420px; }
 
 .full-page .content{
-  height: 1000px;
+  height: 500px;
 }
 
 // .full-page-alt #mCSB_1_container{
@@ -661,14 +680,14 @@
 // }
 
 #section0 {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
   // background: url('https://unsplash.imgix.net/14/unsplash_524000a90aaad_1.JPG?q=75&fm=jpg&s=9305563c74d318288ada6e064cd3f176') no-repeat center center fixed;
   background-image: url('https://unsplash.imgix.net/14/unsplash_524000a90aaad_1.JPG?q=75&fm=jpg&s=9305563c74d318288ada6e064cd3f176');
-  padding: 0% 0 0 0;
+  padding: 0% 0 0 0 !important;
 }
 #section2 {
   -webkit-background-size: cover;
@@ -679,19 +698,6 @@
   background-image: url(../assets/images/ocean-down.jpeg);
   padding: 0% 0 0 0;
 }
-
-// #slide1 {
-//   background-image: url('https://ununsplash.imgix.net/photo-1413913619092-816734eed3a7?q=75&fm=jpg&s=7653dd05ea22b7546a416b360b9d3bdd');
-//   padding: 6% 0 0 0;
-// }
-// #slide2 {
-//   background-image: url('https://unsplash.imgix.net/uploads/1413386993023a925afb4/4e769802?q=75&fm=jpg&s=84dfb097d39ff1600cdd32be44813650');
-//   padding: 6% 0 0 0;
-// }
-
-// #infoMenu li a {
-//   color: #fff;
-// }
 
 .loading {
   position: fixed;
@@ -924,51 +930,18 @@
 //   background: #393545;
 // }
 
-/*==================================================================================================
+/*==============================================================================
 Foundation Variables
-==================================================================================================*/
-/*==================================================================================================
-Imports
-==================================================================================================*/
-/*==================================================================================================
-Type Theme 07
-==================================================================================================*/
-/*==================================================================================================
-My Variables
-==================================================================================================*/
-/*==================================================================================================
-Blog Type Theme 07: Roboto + Inconsolata
-==================================================================================================*/
-/*==================================================================================================
-Foundation Variables
-==================================================================================================*/
-/*==================================================================================================
-Spacing Adjustments
-==================================================================================================*/
+Type Theme 07: Roboto + Inconsolata
+Color Theme 02
+==============================================================================*/
+
 /* line 115, ../scss/themes/_type_07.scss */
 div nav ul.inline-list-custom {
   padding-top: 0.85em;
   margin-bottom: 0.9em;
 }
 
-/*==================================================================================================
-Color Theme 02
-==================================================================================================*/
-/*==================================================================================================
-Master Color Theme 02
-==================================================================================================*/
-/*==================================================================================================
-Foundation Variables
-==================================================================================================*/
-/*==================================================================================================
-My Variables
-==================================================================================================*/
-/*==================================================================================================
-Mixins
-==================================================================================================*/
-/*==================================================================================================
-Blog
-==================================================================================================*/
 /* line 28, ../scss/master/_blog.scss */
 aside.blog-sidebar h5 {
   text-align: center;

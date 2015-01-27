@@ -9,3 +9,5 @@ export default Ember.View.extend({
     });
   }
 });
+
+// Ember.$("#section2").mCustomScrollbar({
