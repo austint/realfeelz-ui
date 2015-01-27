@@ -5,6 +5,10 @@
 @import 'bower_components/foundation/scss/normalize.scss';
 @import 'bower_components/foundation/scss/foundation.scss';
 
+.classy-text-field {
+  display: none;
+}
+
 #examples{
   // background-color: #191919;
   // background-color: rgba(0,0,0,0.3);
@@ -2747,45 +2751,45 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   height: 100%;
 }
 
-/* Standard Forms */
-/* line 300, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form {
-  margin: 0 0 1rem;
-}
+// /* Standard Forms */
+// /* line 300, ../bower_components/foundation/scss/foundation/components/_forms.scss */
+// form {
+//   margin: 0 0 1rem;
+// }
 
-/* Using forms within rows, we need to set some defaults */
-/* line 75, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row .row {
-  margin: 0 -0.5rem;
-}
-/* line 78, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row .row .column,
-form .row .row .columns {
-  padding: 0 0.5rem;
-}
-/* line 81, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row .row.collapse {
-  margin: 0;
-}
-/* line 84, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row .row.collapse .column,
-form .row .row.collapse .columns {
-  padding: 0;
-}
-/* line 85, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row .row.collapse input {
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-topright: 0;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-top-right-radius: 0;
-}
-/* line 97, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row input.column,
-form .row input.columns,
-form .row textarea.column,
-form .row textarea.columns {
-  padding-left: 0.5rem;
-}
+// /* Using forms within rows, we need to set some defaults */
+// /* line 75, ../bower_components/foundation/scss/foundation/components/_forms.scss */
+// form .row .row {
+//   margin: 0 -0.5rem;
+// }
+// /* line 78, ../bower_components/foundation/scss/foundation/components/_forms.scss */
+// form .row .row .column,
+// form .row .row .columns {
+//   padding: 0 0.5rem;
+// }
+// /* line 81, ../bower_components/foundation/scss/foundation/components/_forms.scss */
+// form .row .row.collapse {
+//   margin: 0;
+// }
+// /* line 84, ../bower_components/foundation/scss/foundation/components/_forms.scss */
+// form .row .row.collapse .column,
+// form .row .row.collapse .columns {
+//   padding: 0;
+// }
+// /* line 85, ../bower_components/foundation/scss/foundation/components/_forms.scss */
+// form .row .row.collapse input {
+//   -moz-border-radius-bottomright: 0;
+//   -moz-border-radius-topright: 0;
+//   -webkit-border-bottom-right-radius: 0;
+//   -webkit-border-top-right-radius: 0;
+// }
+// /* line 97, ../bower_components/foundation/scss/foundation/components/_forms.scss */
+// form .row input.column,
+// form .row input.columns,
+// form .row textarea.column,
+// form .row textarea.columns {
+//   padding-left: 0.5rem;
+// }
 
 /* Label Styles */
 /* line 306, ../bower_components/foundation/scss/foundation/components/_forms.scss */
