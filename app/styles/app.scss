@@ -6,7 +6,12 @@
 @import 'bower_components/foundation/scss/foundation.scss';
 
 html, body {
-  margin: 0
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+h3 {
+  margin-top: 50px !important;
 }
 
 #header, #footer{
@@ -16,6 +21,8 @@ html, body {
   width: 100%;
   // background: #9199A5;
   z-index:9;
+  margin-bottom: 10px;
+  margin-top: 20px;
   // text-align:center;
   // color: #f2f2f2;
   padding: 20px 0 0 0;
@@ -39,7 +46,8 @@ html, body {
 }
 
 .content{
-  padding: 20px;
+  padding: 10px;
+  margin: 10px;
   background: #cccccc;
 }
 
@@ -187,21 +195,24 @@ html, body {
 // a {
 //   color: #ffffff !important;
 // }
-h1 {
+
+h1, a {
   font-family: "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
   font-weight: 700;
-  font-size: 40px;
-  margin-left: 10px;
-  margin-right: 10px;
-  background-color: #9199A5;
+  font-size: 50px;
+  margin: 10px;
+  color: #ffffff !important;
+  // background-color: #9199A5;
 }
+
 h2 {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  color: #000000 !important;
-  font-size: 30px;
+  color: #ffffff !important;
+  font-size: 40px;
   margin-left: 10px;
-  margin-right: 100px !important;
+  margin-right: 10px;
+  // background-color: #9199A5;
 }
 // h3 {
 //   font-family: "Open Sans";

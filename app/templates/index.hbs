@@ -2,15 +2,15 @@
 {{view 'malihu-view'}}
 
 <div id="header">
-  <div class="row realfeelz">
-  <div class="small-12 medium-12 large-12 columns">
-    <div class="small-3 medium-3 large-3 columns">
-      <h1 class="text-center">RealFeelz</h1>
+  <div class="row">
+  <div class="small-10 medium-10 large-10 small-centered columns">
+    <div class="large-3 columns">
+      <h1 class="text-center realfeelz">RealFeelz</h1>
     </div>
-    <div class="small-1 medium-1 large-1 columns">
+    <div class="large-2 columns">
     </div>
-    <div class="small-8 medium-8 large-8 columns">
-      <h1 class="text-center">What's Real For You Right Now?</h1>
+    <div class="small-12 large-7 columns">
+      <h2 class="text-center">What's Real For You Right Now?</h2>
     </div>
   </div>
   </div>
@@ -19,16 +19,21 @@
 <div id="fullpage">
   <div class="section " id="section0">
     <div class="row">
-      <div class="small-12 medium-12 large-12 small-centered columns">
-        <h2>What's Real For You Right Now?</h2>
+      <div class="small-10 medium-10 large-10 small-centered columns">
+        <h3>Anonymously Share Your Truth</h3>
       </div>
-      <div class="small-12 medium-12 large-12 small-centered columns">
+      <div class="small-10 medium-10 large-10 small-centered columns">
         <form {{action "postStatement" newPost on="submit" }}>
           {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard" id="textbox"}} {{textarea placeholder="what's real for you right now?" class="classy-text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
           <button class="button" type="submit" id="clearButton">Post</button>
         </form>
       </div>
     </div>
+{{!--     <div class="row">
+      <div class="large-10 columns">
+        <a href="#truths" class="button info">Info Button</a>
+      </div>
+    </div> --}}
   </div>
 
   <div class="section" id="section2">

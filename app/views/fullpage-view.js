@@ -4,7 +4,7 @@ export default Ember.View.extend({
   didInsertElement: function() {
     Ember.$(document).ready(function() {
       Ember.$('#fullpage').fullpage({
-        verticalCentered: true,
+        // verticalCentered: true,
         anchors: ['home', 'truths'],
         navigation: true,
         navigationPosition: 'right',
