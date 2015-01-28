@@ -8,7 +8,7 @@ body {
 .parallax-background {
   background-color: #413C55;
   // background: url('/assets/images/realfeelz-ocean-second.jpeg');
-  height: 620px;
+  height: 750px;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -29,7 +29,7 @@ body {
   // position: fixed;
   max-width: 100%;
   position: relative;
-  top: 520px;
+  top: 400px;
   padding: 50px;
   font-size: 20px;
   padding-left: 0px;
@@ -38,8 +38,19 @@ body {
   padding-left: 10px;
 }
 
+footer {
+  margin-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-bottom: 0px !important;
+}
+
 .truth-list {
   padding: 0px !important;
+}
+
+.post-truth {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
 }
 
 .truth-container {
@@ -49,6 +60,7 @@ body {
 button {
   border-radius: 4px !important;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
 }
 a {
   color: #ffffff !important;
@@ -64,7 +76,7 @@ h2 a {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 25px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -76,13 +88,16 @@ h3 {
   margin-right: 10px;
 }
 h4 {
-  color: #ffffff;
+  color: #413C55 !important;
   font-family: "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal !important;
 }
 
 hr {
+  border: solid #413C55 !important;
   margin-top: 25px;
   margin-bottom: 25px;
+  border-width: 1px 0 0 !important;
 }
 ul {
   margin: 0px;
@@ -109,36 +124,6 @@ textarea:focus, select:focus {
   display: none;
 }
 
-// .parallax-background {
-//   background: url('/assets/images/realfeelz-ocean-first.jpeg');
-//   height: 500px;
-//   background-repeat: no-repeat;
-//   -webkit-background-size: cover;
-//   -moz-background-size: cover;
-//   -o-background-size: cover;
-//   background-size: cover;
-//   position: fixed;
-//   width: 100%;
-// }
-// .intro-text {
-//   font-size: 50px;
-//   color: #fff;
-//   text-align: center;
-//   margin-top: 15%;
-// }
-// .parallax-content {
-//   max-width: 100%;
-//   position: relative;
-//   top: 500px;
-//   font-size: 20px;
-//   background: url('/assets/images/realfeelz-ocean-second.jpeg');
-// }
-// html, body {
-//   margin: 0;
-//   padding: 0;
-//   height: 100%;
-//   background: #393545;
-// }
 .loading {
   position: fixed;
   z-index: 999;
@@ -1898,8 +1883,10 @@ button, .button {
   font-size: 1rem;
   /*     @else                            { font-size: $padding - rem-calc(2); } */
 
-  background-color: #333d41;
+  background-color: #2E5A7C;
   border-color: #283033;
+  // background-color: #333d41;
+  // border-color: #283033;
   color: white;
   -webkit-transition: background-color 300ms ease-out;
   -moz-transition: background-color 300ms ease-out;
@@ -1913,7 +1900,8 @@ button, .button {
 /* line 142, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 
 button:hover, button:focus, .button:hover, .button:focus {
-  background-color: #283033;
+  background-color: #6B8E23;
+  // background-color: #283033;
 }
 /* line 153, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 
