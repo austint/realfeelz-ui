@@ -1,11 +1,10 @@
 <div class="parallax-background">
-  <div class="top-border"></div>
 
   <div class="row">
     <div class="small-12 medium-10 large-8 small-centered columns">
       <header>
-      <h1><a>RealFeelz</a></h1>
-      <h2><a>What's Real For You Right Now?</a></h2>
+        <h1><a>RealFeelz</a></h1>
+        <h2><a>What's Real For You Right Now?</a></h2>
       </header>
     </div>
   </div>
@@ -14,13 +13,11 @@
 <div class="parallax-content">
   <div class="row">
     <div class="small-12 medium-10 large-8 small-centered columns post-truth">
-      {{!-- <footer> --}}
-        <h4 class="text-center">Anonymously Share Your Truth.</h4>
-        <form {{action "postStatement" newPost on="submit" }}>
-          {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard" id="textbox"}} {{textarea placeholder="what's real for you right now?" class="classy-text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
-          <button class="button" type="submit" id="clearButton">Post</button>
-        </form>
-      {{!-- </footer> --}}
+      <h4 class="text-center">Anonymously Share Your Truth</h4>
+      <form {{action "postStatement" newPost on="submit" }}>
+        {{textarea placeholder="what's real for you right now?" class="text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard" id="textbox"}} {{textarea placeholder="what's real for you right now?" class="classy-text-field" value=newPost type="text" autofocus="true" cols="40" maxlength="200" require="true" wrap="hard"}}
+        <button class="button" type="submit" id="clearButton">Post</button>
+      </form>
     </div>
   </div>
   <hr>
