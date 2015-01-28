@@ -1,13 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Cabin:400,500,700|Raleway:400,700,500|Open+Sans:400,700);
-@import 'bower_components/foundation-apps/scss/foundation.scss';
+@import 'bower_components/foundation/scss/foundation.scss';
 body {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
   font-weight: 200;
   font-size: 20px;
 }
 .parallax-background {
-  // background-color: #0078A0;
-  background: url('/assets/images/realfeelz-ocean-second.jpeg');
+  background-color: #413C55;
+  // background: url('/assets/images/realfeelz-ocean-second.jpeg');
   height: 620px;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -19,7 +19,7 @@ body {
 }
 
 .parallax-content {
-  background: #2E5A7C;
+  background: #A1B5D8;
   // background: url('https://ununsplash.imgix.net/reserve/D9xlw7UxTBqQw5sLf8cJ_reef%20insp-72.jpg?q=75&fm=jpg&s=a46f72e373f7af2b3bba993f565e24be');
   // background-repeat: no-repeat;
   // -webkit-background-size: cover;
@@ -40,6 +40,10 @@ body {
 
 .truth-list {
   padding: 0px !important;
+}
+
+.truth-container {
+  margin-left: 0px;
 }
 
 button {
