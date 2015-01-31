@@ -25,6 +25,7 @@
     "connect-restreamer": "^1.0.1",
     "ember-cli": "^0.1.4",
     "ember-cli-content-security-policy": "0.3.0",
+    "ember-cli-geolocation": "0.0.13",
     "ember-cli-ic-ajax": "0.1.1",
     "ember-cli-inject-live-reload": "^1.3.0",
     "ember-cli-mocha": "^0.1.4",
